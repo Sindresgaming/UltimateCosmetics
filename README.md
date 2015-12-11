@@ -1,6 +1,7 @@
 # UltimateCosmetics
 UltimateCosmetics repository
-Every bug with the UltimateCosmetics plugin should be posted here.
+
+Every bug with the UltimateCosmetics plugin should be posted here!
 
 API documentation will be released soon(TM)
 
