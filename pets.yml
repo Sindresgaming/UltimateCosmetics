@@ -1,0 +1,313 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Pets be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /pets
+# The message to show when a player doesn't have permission to use a Pet
+NoPermissionMessage: '&4You are not allowed to use this Pet!'
+# The Sound to be played when a player is given a Pet
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Pet is removed
+RemoveSound: ENDERDRAGON_WINGS
+# The interval in seconds between the checks to teleport the Pet
+TeleportInterval: 1
+# The distance at which the Pet will be teleported back to the owner
+TeleportDistance: 8
+# The inventory name of the GUI
+GUIName: '&b&lPets'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+  # Should every Pet that a player doesn't have access to be replaced by this item?
+  Enabled: true
+  # The item ID and optionally data of the item
+  Item: '351:8'
+  # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Pet Name)
+  Name: '%cosmeticsname%'
+  # The description, or 'lore' of the item (use | to start a new line)
+  Description: '&4&oYou are not allowed to use this Pet'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Pet &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Pet'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Pets:
+    Creeper:
+        # The item ID and optionally data of the item
+        Item: '383:50'
+        # The name in the GUI of the item
+        Name: '&bCreeper Pet'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oA Creeper Pet'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Pet
+        Permission: ultimatecosmetics.pets.creeper
+        # The PetType of this Pet (Valid PetTypes can be found here: http://pastebin.com/T8znw3a8)
+        PetType: CREEPER
+        # The PetData of this Pet (Valid PetData can be found here: http://pastebin.com/T8znw3a8)
+        PetData: []
+    PoweredCreeper:
+        Item: '383:50'
+        Name: '&bPowered Creeper Pet'
+        Description: '&e&oA Powered Creeper Pet'
+        Position: 11
+        Permission: ultimatecosmetics.pets.poweredcreeper
+        PetType: CREEPER
+        PetData:
+        - POWER
+    Skeleton:
+        Item: '383:51'
+        Name: '&bSkeleton Pet'
+        Description: '&e&oA Skeleton Pet'
+        Position: 12
+        Permission: ultimatecosmetics.pets.skeleton
+        PetType: SKELETON
+        PetData: []
+    WitherSkeleton:
+        Item: '383:58'
+        Name: '&bWither Skeleton Pet'
+        Description: '&e&oA Wither Skeleton Pet'
+        Position: 13
+        Permission: ultimatecosmetics.pets.witherskeleton
+        PetType: SKELETON
+        PetData:
+        - WITHER
+    Spider:
+        Item: '383:52'
+        Name: '&bSpider Pet'
+        Description: '&e&oA Spider Pet'
+        Position: 14
+        Permission: ultimatecosmetics.pets.spider
+        PetType: SPIDER
+        PetData: []
+    Giant:
+        Item: '383:54'
+        Name: '&bGiant Pet'
+        Description: '&e&oA Giant Pet'
+        Position: 15
+        Permission: ultimatecosmetics.pets.giant
+        PetType: GIANT
+        PetData: []
+    Zombie:
+        Item: '383:54'
+        Name: '&bZombie Pet'
+        Description: '&e&oA Zombie Pet'
+        Position: 16
+        Permission: ultimatecosmetics.pets.zombie
+        PetType: ZOMBIE
+        PetData:
+        - BABY
+    ZombiePigman:
+        Item: '383:57'
+        Name: '&bZombie Pigman Pet'
+        Description: '&e&oA Zombie Pigman Pet'
+        Position: 19
+        Permission: ultimatecosmetics.pets.zombiepigman
+        PetType: PIG_ZOMBIE
+        PetData:
+        - BABY
+    Enderman:
+        Item: '383:58'
+        Name: '&bEnderman Pet'
+        Description: '&e&oAn Enderman Pet'
+        Position: 20
+        Permission: ultimatecosmetics.pets.enderman
+        PetType: ENDERMAN
+        PetData: []
+    CaveSpider:
+        Item: '383:59'
+        Name: '&bCave Spider Pet'
+        Description: '&e&oA Cave Spider Pet'
+        Position: 21
+        Permission: ultimatecosmetics.pets.cavespider
+        PetType: CAVE_SPIDER
+        PetData: []
+    Silverfish:
+        Item: '383:60'
+        Name: '&bSilverfish Pet'
+        Description: '&e&oA Silverfish Pet'
+        Position: 22
+        Permission: ultimatecosmetics.pets.silverfish
+        PetType: SILVERFISH
+        PetData: []
+    Witch:
+        Item: '383:66'
+        Name: '&bWitch Pet'
+        Description: '&e&oA Witch Pet'
+        Position: 23
+        Permission: ultimatecosmetics.pets.witch
+        PetType: WITCH
+        PetData: []
+    Endermite:
+        Item: '383:67'
+        Name: '&bEndermite Pet'
+        Description: '&e&oAn Endermite Pet'
+        Position: 24
+        Permission: ultimatecosmetics.pets.endermite
+        PetType: ENDERMITE
+        PetData: []
+    Pig:
+        Item: '383:90'
+        Name: '&bPig Pet'
+        Description: '&e&oA Pig Pet'
+        Position: 25
+        Permission: ultimatecosmetics.pets.pig
+        PetType: PIG
+        PetData:
+        - BABY
+    Sheep:
+        Item: '383:91'
+        Name: '&bSheep Pet'
+        Description: '&e&oA Sheep Pet'
+        Position: 28
+        Permission: ultimatecosmetics.pets.sheep
+        PetType: SHEEP
+        PetData:
+        - BABY
+    Cow:
+        Item: '383:92'
+        Name: '&bCow Pet'
+        Description: '&e&oA Cow Pet'
+        Position: 29
+        Permission: ultimatecosmetics.pets.cow
+        PetType: COW
+        PetData:
+        - BABY
+    Chicken:
+        Item: '383:93'
+        Name: '&bChicken Pet'
+        Description: '&e&oA Chicken Pet'
+        Position: 30
+        Permission: ultimatecosmetics.pets.chicken
+        PetType: CHICKEN
+        PetData:
+        - BABY
+    Wolf:
+        Item: '383:95'
+        Name: '&bWolf Pet'
+        Description: '&e&oA Wolf Pet'
+        Position: 31
+        Permission: ultimatecosmetics.pets.wolf
+        PetType: WOLF
+        PetData:
+        - BABY
+    Mooshroom:
+        Item: '383:96'
+        Name: '&bMooshroom Pet'
+        Description: '&e&oA Mooshroom Pet'
+        Position: 32
+        Permission: ultimatecosmetics.pets.mooshroom
+        PetType: MUSHROOM_COW
+        PetData:
+        - BABY
+    SnowGolem:
+        Item: '383:97'
+        Name: '&bSnow Golem Pet'
+        Description: '&e&oA Snow Golem Pet'
+        Position: 33
+        Permission: ultimatecosmetics.pets.snowgolem
+        PetType: SNOWMAN
+        PetData: []
+    Ocelot:
+        Item: '383:98'
+        Name: '&bOcelot Pet'
+        Description: '&e&oAn Ocelot Pet'
+        Position: 34
+        Permission: ultimatecosmetics.pets.ocelot
+        PetType: OCELOT
+        PetData:
+        - BABY
+    # Starting at page 2
+    IronGolem:
+        Item: '383:51'
+        Name: '&bIron Golem Pet'
+        Description: '&e&oAn Iron Golem Pet'
+        Position: 55
+        Permission: ultimatecosmetics.pets.irongolem
+        PetType: IRON_GOLEM
+        PetData: []
+    Donkey:
+        Item: '383:100'
+        Name: '&bDonkey Pet'
+        Description: '&e&oA Donkey Pet'
+        Position: 56
+        Permission: ultimatecosmetics.pets.donkey
+        PetType: HORSE
+        PetData:
+        - NONE
+        - DONKEY
+        - BABY
+    Horse:
+        Item: '383:100'
+        Name: '&bHorse Pet'
+        Description: '&e&oA Horse Pet'
+        Position: 57
+        Permission: ultimatecosmetics.pets.horse
+        PetType: HORSE
+        PetData:
+        - NONE
+        - HORSE
+        - BABY
+    Mule:
+        Item: '383:100'
+        Name: '&bMule Pet'
+        Description: '&e&oA Mule Pet'
+        Position: 58
+        Permission: ultimatecosmetics.pets.mule
+        PetType: HORSE
+        PetData:
+        - NONE
+        - MULE
+        - BABY
+    SkeletonHorse:
+        Item: '383:51'
+        Name: '&bSkeleton Horse Pet'
+        Description: '&e&oA Skeleton Horse Pet'
+        Position: 59
+        Permission: ultimatecosmetics.pets.skeletonhorse
+        PetType: HORSE
+        PetData:
+        - NONE
+        - SKELETON_HORSE
+        - BABY
+    ZombieHorse:
+        Item: '383:54'
+        Name: '&bZombie Horse Pet'
+        Description: '&e&oA Zombie Horse Pet'
+        Position: 60
+        Permission: ultimatecosmetics.pets.zombiehorse
+        PetType: HORSE
+        PetData:
+        - NONE
+        - UNDEAD_HORSE
+        - BABY
+    Rabbit:
+        Item: '383:101'
+        Name: '&bRabbit Pet'
+        Description: '&e&oA Rabbit Pet'
+        Position: 61
+        Permission: ultimatecosmetics.pets.rabbit
+        PetType: RABBIT
+        PetData:
+        - BABY
+    Villager:
+        Item: '383:120'
+        Name: '&bVillager Pet'
+        Description: '&e&oA Villager Pet'
+        Position: 64
+        Permission: ultimatecosmetics.pets.villager
+        PetType: VILLAGER
+        PetData:
+        - BABY
+DoNotChange: 3.3.1

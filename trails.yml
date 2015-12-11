@@ -1,0 +1,104 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Trails be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /Trails
+# The message to show when a player doesn't have permission to use a Trail
+NoPermissionMessage: '&4You are not allowed to use this Trail!'
+# The Sound to be played when a player is given a Trail
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Trail is removed
+RemoveSound: ENDERDRAGON_WINGS
+# The interval in seconds between the dropping of the item
+DropInterval: 1
+# The time in seconds before the trail will dissapear
+RemoveDelay: 3
+# The inventory name of the GUI
+GUIName: '&c&lTrails'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+  # Should every Trail that a player doesn't have access to be replaced by this item?
+  Enabled: true
+  # The item ID and optionally data of the item
+  Item: '351:8'
+  # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Trail Name)
+  Name: '%cosmeticsname%'
+  # The description, or 'lore' of the item (use | to start a new line)
+  Description: '&4&oYou are not allowed to use this Trail'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Trail &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Trail'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Trails:
+    NetherQuartz:
+        # The item ID and optionally data of the item
+        Item: '406'
+        # The name in the GUI of the item
+        Name: '&cNether Quartz'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oA Nether Quartz Trail'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Trail
+        Permission: ultimatecosmetics.trails.netherquartz
+    Coal:
+        Item: '263'
+        Name: '&cCoal'
+        Description: '&e&oA Coal Trail'
+        Position: 11
+        Permission: ultimatecosmetics.trails.coal
+    Iron:
+        Item: '265'
+        Name: '&cIron'
+        Description: '&e&oAn Iron Trail'
+        Position: 12
+        Permission: ultimatecosmetics.trails.iron
+    Redstone:
+        Item: '331'
+        Name: '&cRedstone'
+        Description: '&e&oA Redstone Trail'
+        Position: 13
+        Permission: ultimatecosmetics.trails.redstone
+    Lapis:
+        Item: '351:4'
+        Name: '&cLapis Lazuli'
+        Description: '&e&oA Lapis Lazuli Trail'
+        Position: 14
+        Permission: ultimatecosmetics.trails.lapis
+    Gold:
+        Item: '266'
+        Name: '&cGold'
+        Description: '&e&oA Gold Trail'
+        Position: 15
+        Permission: ultimatecosmetics.trails.gold
+    Diamond:
+        Item: '264'
+        Name: '&cDiamond'
+        Description: '&e&oA Diamond Trail'
+        Position: 16
+        Permission: ultimatecosmetics.trails.diamond
+    Emerald:
+        Item: '388'
+        Name: '&cEmerald'
+        Description: '&e&oAn Emerald Trail'
+        Position: 19
+        Permission: ultimatecosmetics.trails.emerald
+    NetherStar:
+        Item: '399'
+        Name: '&cNether Star'
+        Description: '&e&oA Nether Star Trail'
+        Position: 20
+        Permission: ultimatecosmetics.trails.netherstar
+DoNotChange: 3.3.1

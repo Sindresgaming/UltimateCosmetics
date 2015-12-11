@@ -1,0 +1,136 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should the plugin check for updates on Spigot
+UpdateChecker: true
+# Console logging level
+# 0 means no logging at all
+# 1 means basic logging
+# 2 means extensive logging
+LoggingLevel: 1
+# Should Cosmetics be removed when a player changes worlds?
+RemoveCosmeticsOnWorldChange: false
+# Should Cosmetics be removed when a player logs out?
+RemoveCosmeticsOnLogOut: false
+# The worlds in which this plugin will not work
+# Make sure RemoveCosmeticsOnWorldChange is set to true for this to work correctly
+WorldsBlacklist:
+- someworld
+- someotherworld
+# Should an Item be given upon joining, that will display the GUI upon clicking? (It is advised to turn this off in a non-hub environment)
+GiveItemOnJoin: true
+JoinItem:
+    # The item ID and optionally data of the item
+    Item: '54'
+    # The name of the Item
+    Name: '&1C&2o&3s&4m&5e&6t&7i&8c&9s'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&e&oAmazing Cosmetics!'
+    # The slot in which the item will be put
+    Slot: 3
+# The Sound to be played when a player opens the GUI (leave blank for no sound) A list of valid sounds can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+GUIOpenSound: CHEST_OPEN
+# The Sound to be played when a player clicks in the GUI (leave blank for no sound) A list of valid sounds can be found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+GUIClickSound: CLICK
+# The command that will open the Cosmetics GUI
+CosmeticsCommand: /cosmetics
+CosmeticsGUI:
+    # The inventory name of the Cosmetics GUI
+    Name: '&1C&2o&3s&4m&5e&6t&7i&8c&9s'
+    # The size of the Cosmetics GUI (must be divisible by 9!)
+    Size: 45
+    Items:
+        BalloonsItem:
+            # The item ID and optionally data of the item
+            Item: '420'
+            # The name of the item
+            Name: '&1&lBalloons'
+            # The description, or 'lore' of the item (use | to start a new line)
+            Description: '&e&oGet yourself a lovely Balloon!'
+            # The position in the GUI of this item (starts at 0)
+            Position: 2
+            #The command to be executed when you click on the item. Generally, this is the same command as defined in the Cosmetic's config, however, there are plenty of other options.
+            Command: /balloons
+        BannersItem:
+            Item: '425'
+            Name: '&2&lBanners'
+            Description: '&e&oPut an amazing Banner on your head!'
+            Position: 4
+            Command: /banners
+        MorphsItem:
+            Item: '397:4'
+            Name: '&3&lMorphs'
+            Description: '&e&oScare your friends as a Creeper!'
+            Position: 6
+            Command: /morphs
+        FireworksItem:
+            Item: '401'
+            Name: '&4&lFireworks'
+            Description: '&e&oLight of some celebration Fireworks!'
+            Position: 10
+            Command: /fireworks
+        GadgetsItem:
+            Item: '369'
+            Name: '&5&lGadgets'
+            Description: '&e&oGet hold of some cool Gadgets!'
+            Position: 12
+            Command: /gadgets
+        HatsItem:
+            Item: '310'
+            Name: '&6&lHats'
+            Description: '&e&oShow the world your new Hats!'
+            Position: 14
+            Command: /hats
+        HeartsItem:
+            Item: '351:1'
+            Name: '&7&lHearts'
+            Description: '&e&oCustomize your Hearts!'
+            Position: 16
+            Command: /hearts
+        MountsItem:
+            Item: '329'
+            Name: '&8&lMounts'
+            Description: '&e&oBecause walking is mainstream!'
+            Position: 28
+            Command: /mounts
+        MusicItem:
+            Item: '2258'
+            Name: '&9&lMusic'
+            Description: '&e&oListen to some funky Music!'
+            Position: 30
+            Command: /music
+        ParticlesItem:
+            Item: '399'
+            Name: '&a&lParticles'
+            Description: '&e&oLet Particles fly around you!'
+            Position: 32
+            Command: /particles
+        PetsItem:
+            Item: '383:90'
+            Name: '&b&lPets'
+            Description: '&e&oFriends for life!'
+            Position: 34
+            Command: /pets
+        TrailsItem:
+            Item: '362'
+            Name: '&c&lTrails'
+            Description: '&e&oLeave a trail of... Anything!'
+            Position: 38
+            Command: /trails
+        WardrobeItem:
+            Item: '299'
+            Name: '&d&lWardrobe'
+            Description: '&e&oShow off some beautiful clothes!'
+            Position: 40
+            Command: /wardrobe
+        BowtrailsItem:
+            Item: '261'
+            Name: '&e&lBowtrails'
+            Description: '&e&oKill your opponents in style!'
+            Position: 42
+            Command: /bowtrails
+DoNotChange: 3.5.2

@@ -1,0 +1,29 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+Stacker:
+    # Should Stacker be enabled?
+    Enabled: true
+    # The permission to use Stacker
+    Permission: ultimatecosmetics.stacker
+    # The message to display when someone doesn't have permission to use Stacker
+    NoPermissionMessage: '&4You are not allowed to use Stacker!'
+    # Should players only be able to stack other players?
+    StackPlayersOnly: false
+    # The prefix that will be shown in chat
+    Prefix: '&b[&cStacker&b]'
+    
+DoubleJump:
+    # Should DoubleJump be enabled?
+    Enabled: true
+    Groups:
+        ExampleGroup:
+            # The permission to use this DoubleJump group
+            Permission: ultimatecosmetics.doublejump.example
+            # The Multiplier of this DoubleJump group
+            Multiplier: 5
+DoNotChange: 3.3.1

@@ -1,0 +1,288 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Particles be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /particles
+# The message to show when a player doesn't have permission to use a Particle
+NoPermissionMessage: '&4You are not allowed to use this Particle!'
+# The Sound to be played when a player is given a Particle
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Particle is removed
+RemoveSound: ENDERDRAGON_WINGS
+# The interval in seconds between the updating of the Particles
+UpdateInterval: 0.5
+# The distance in blocks or less that are required to see the Particles
+ViewDistance: 20
+# The inventory name of the GUI
+GUIName: '&a&lParticles'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+  # Should every Particle that a player doesn't have access to be replaced by this item?
+  Enabled: true
+  # The item ID and optionally data of the item
+  Item: '351:8'
+  # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Particle Name)
+  Name: '%cosmeticsname%'
+  # The description, or 'lore' of the item (use | to start a new line)
+  Description: '&4&oYou are not allowed to use this Particle'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Particle &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Particle'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Particles:
+    Cloud:
+        # The item ID and optionally data of the item
+        Item: '80'
+        # The name in the GUI of the item
+        Name: '&aCloud'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oCloud Particles'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Particle
+        Permission: ultimatecosmetics.particles.cloud
+        # The Particle effect (Valid Effects can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Effect.html)
+        Particle: CLOUD
+        # The ID of the Particle effect (Can be left 0 in most cases)
+        ID: 0
+        # The data of the Particle effect (Can be left 0 in most cases)
+        Data: 0
+    ColouredDust:
+        Item: '351:13'
+        Name: '&aColoured Dust'
+        Description: '&e&oColoured Dust Particles'
+        Position: 11
+        Permission: ultimatecosmetics.particles.coloureddust
+        Particle: COLOURED_DUST
+        ID: 0
+        Data: 0
+    Crit:
+        Item: '267'
+        Name: '&aCrit'
+        Description: '&e&oCrit Particles'
+        Position: 12
+        Permission: ultimatecosmetics.particles.crit
+        Particle: CRIT
+        ID: 0
+        Data: 0
+    FireworksSpark:
+        Item: '401'
+        Name: '&aFireworks Spark'
+        Description: '&e&oFireworks Spark Particles'
+        Position: 13
+        Permission: ultimatecosmetics.particles.fireworksspark
+        Particle: FIREWORKS_SPARK
+        ID: 0
+        Data: 0
+    Flame:
+        Item: '377'
+        Name: '&aFlame'
+        Description: '&e&oFlame Particles'
+        Position: 14
+        Permission: ultimatecosmetics.particles.flame
+        Particle: FLAME
+        ID: 0
+        Data: 0
+    Enchantment:
+        Item: '116'
+        Name: '&aEnchantment'
+        Description: '&e&oEnchantment Particles'
+        Position: 15
+        Permission: ultimatecosmetics.particles.enchantment
+        Particle: FLYING_GLYPH
+        ID: 0
+        Data: 0
+    GreenSparkle:
+        Item: '388'
+        Name: '&aGreen Sparkle'
+        Description: '&e&oGreen Sparkle Particles'
+        Position: 16
+        Permission: ultimatecosmetics.particles.greensparkle
+        Particle: HAPPY_VILLAGER
+        ID: 0
+        Data: 0
+    Heart:
+        Item: '351:1'
+        Name: '&4Heart'
+        Description: '&e&oHeart Particles'
+        Position: 19
+        Permission: ultimatecosmetics.particles.heart
+        Particle: HEART
+        ID: 0
+        Data: 0
+    WhiteStars:
+        Item: '353'
+        Name: '&aWhite Star'
+        Description: '&e&oWhite Star Particles'
+        Position: 20
+        Permission: ultimatecosmetics.particles.whitestars
+        Particle: INSTANT_SPELL
+        ID: 0
+        Data: 0
+    LargeSmoke:
+        Item: '289'
+        Name: '&8Large Smoke'
+        Description: '&e&oLarge Smoke Particles'
+        Position: 21
+        Permission: ultimatecosmetics.particles.largesmoke
+        Particle: LARGE_SMOKE
+        ID: 0
+        Data: 0
+    LavaPop:
+        Item: '385'
+        Name: '&aLava Pop'
+        Description: '&e&oLava Pop Particles'
+        Position: 22
+        Permission: ultimatecosmetics.particles.lavapop
+        Particle: LAVA_POP
+        ID: 0
+        Data: 0
+    LavaDrip:
+        Item: '327'
+        Name: '&aLava Drip'
+        Description: '&e&oLava Drip Particles'
+        Position: 23
+        Permission: ultimatecosmetics.particles.lavadrip
+        Particle: LAVADRIP
+        ID: 0
+        Data: 0
+    MagicCrit:
+        Item: '276'
+        Name: '&aMagic Crit'
+        Description: '&e&oMagic Crit Particles'
+        Position: 24
+        Permission: ultimatecosmetics.particles.magiccrit
+        Particle: MAGIC_CRIT
+        ID: 0
+        Data: 0
+    Note:
+        Item: '84'
+        Name: '&aNote'
+        Description: '&e&oNote Particles'
+        Position: 25
+        Permission: ultimatecosmetics.particles.note
+        Particle: NOTE
+        ID: 0
+        Data: 0
+    Smoke:
+        Item: '351:7'
+        Name: '&8Smoke'
+        Description: '&e&oSmoke Particles'
+        Position: 28
+        Permission: ultimatecosmetics.particles.smoke
+        Particle: PARTICLE_SMOKE
+        ID: 0
+        Data: 0
+    Portal:
+        Item: '351:5'
+        Name: '&aPortal'
+        Description: '&e&oPortal Particles'
+        Position: 29
+        Permission: ultimatecosmetics.particles.portal
+        Particle: PORTAL
+        ID: 0
+        Data: 0
+    PotionSwirl:
+        Item: '373:8193'
+        Name: '&aPotion Swirl'
+        Description: '&e&oPotion Swirl Particles'
+        Position: 30
+        Permission: ultimatecosmetics.particles.potionswirl
+        Particle: POTION_SWIRL
+        ID: 0
+        Data: 0
+    Slime:
+        Item: '341'
+        Name: '&aSlime'
+        Description: '&e&oSlime Particles'
+        Position: 31
+        Permission: ultimatecosmetics.particles.slime
+        Particle: SLIME
+        ID: 0
+        Data: 0
+    SmallSmoke:
+        Item: '351:8'
+        Name: '&7Small Smoke'
+        Description: '&e&oSmall Smoke Particles'
+        Position: 32
+        Permission: ultimatecosmetics.particles.smallsmoke
+        Particle: SMALL_SMOKE
+        ID: 0
+        Data: 0
+    SnowShovel:
+        Item: '332'
+        Name: '&aSnow Shovel'
+        Description: '&e&oSnow Shovel Particles'
+        Position: 33
+        Permission: ultimatecosmetics.particles.snowshovel
+        Particle: SNOW_SHOVEL
+        ID: 0
+        Data: 0
+    Spell:
+        Item: '373:8234'
+        Name: '&7Spell'
+        Description: '&e&oSpell Particles'
+        Position: 34
+        Permission: ultimatecosmetics.particles.spell
+        Particle: SPELL
+        ID: 0
+        Data: 0
+    # Starting at page 2
+    Splash:
+        Item: '373'
+        Name: '&aSplash'
+        Description: '&e&oSplash Particles'
+        Position: 55
+        Permission: ultimatecosmetics.particles.splash
+        Particle: SPLASH
+        ID: 0
+        Data: 0
+    Thundercloud:
+        Item: '402'
+        Name: '&8Thundercloud'
+        Description: '&e&oThundercloud Particles'
+        Position: 56
+        Permission: ultimatecosmetics.particles.thundercloud
+        Particle: VILLAGER_THUNDERCLOUD
+        ID: 0
+        Data: 0
+    VoidFog:
+        Item: '337'
+        Name: '&7Void Fog'
+        Description: '&e&oVoid Fog Particles'
+        Position: 57
+        Permission: ultimatecosmetics.particles.voidfog
+        Particle: VOID_FOG
+        ID: 0
+        Data: 0
+    WaterDrip:
+        Item: '326'
+        Name: '&aWater Drip'
+        Description: '&e&oWater Drip Particles'
+        Position: 58
+        Permission: ultimatecosmetics.particles.waterdrip
+        Particle: WATERDRIP
+        ID: 0
+        Data: 0
+    WitchMagic:
+        Item: '373:16393'
+        Name: '&aWitch Magic'
+        Description: '&e&oWitch Magic Particles'
+        Position: 59
+        Permission: ultimatecosmetics.particles.witchmagic
+        Particle: WITCH_MAGIC
+        ID: 0
+        Data: 0
+DoNotChange: 3.3.1

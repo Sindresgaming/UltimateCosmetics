@@ -1,0 +1,309 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Balloons be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /balloons
+# The message to show when a player doesn't have permission to use a Balloon
+NoPermissionMessage: '&4You are not allowed to use this Balloon!'
+# The Sound to be played when a player is given a Balloon
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Balloon is removed
+RemoveSound: ENDERDRAGON_WINGS
+# Should Bat sounds be completely disabled on the server?
+DisableBatSounds: true
+# The interval in seconds between the checks to teleport the Balloon
+TeleportInterval: 1
+# The distance at which the Balloon will be teleported back to the owner
+TeleportDistance: 8
+# The inventory name of the GUI
+GUIName: '&1&lBalloons'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+  # Should every Balloon that a player doesn't have access to be replaced by this item?
+  Enabled: true
+  # The item ID and optionally data of the item
+  Item: '351:8'
+  # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Balloon Name)
+  Name: '%cosmeticsname%'
+  # The description, or 'lore' of the item (use | to start a new line)
+  Description: '&4&oYou are not allowed to use this Balloon'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Balloon &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Balloon'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Balloons:
+    WhiteWool:
+        # The item ID and optionally data of the item
+        Item: '35:0'
+        # The name in the GUI of the item
+        Name: '&1White Wool Balloon'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&7&oA White Wool Balloon'
+        # The position in the GUI of this item (starts at 0)
+        # The position/44 = the page the balloon will be on
+        # Position: 0 will put it in Slot 1 from page 1
+        # Position: 45 will put it in Slot 1 from page 2
+        # etc...
+        Position: 10
+        # The permission to use this Balloon
+        Permission: ultimatecosmetics.balloons.whitewool
+    OrangeWool:
+        Item: '35:1'
+        Name: '&1Orange Wool Balloon'
+        Description: '&7&oAn Orange Wool Balloon'
+        Position: 11
+        Permission: ultimatecosmetics.balloons.orangewool
+    MagentaWool:
+        Item: '35:2'
+        Name: '&1Magenta Wool Balloon'
+        Description: '&7&oA Magenta Wool Balloon'
+        Position: 12
+        Permission: ultimatecosmetics.balloons.magentawool
+    LightBlueWool:
+        Item: '35:3'
+        Name: '&1Light Blue Wool Balloon'
+        Description: '&7&oA Light Blue Wool Balloon'
+        Position: 13
+        Permission: ultimatecosmetics.balloons.lightbluewool
+    YellowWool:
+        Item: '35:4'
+        Name: '&1Yellow Wool Balloon'
+        Description: '&7&oA Yellow Wool Balloon'
+        Position: 14
+        Permission: ultimatecosmetics.balloons.yellowwool
+    LimeWool:
+        Item: '35:5'
+        Name: '&1Lime Wool Balloon'
+        Description: '&7&oA Lime Wool Balloon'
+        Position: 15
+        Permission: ultimatecosmetics.balloons.limewool
+    PinkWool:
+        Item: '35:6'
+        Name: '&1Pink Wool Balloon'
+        Description: '&7&oA Pink Wool Balloon'
+        Position: 16
+        Permission: ultimatecosmetics.balloons.pinkwool
+    GrayWool:
+        Item: '35:7'
+        Name: '&1Gray Wool Balloon'
+        Description: '&7&oA Gray Wool Balloon'
+        Position: 19
+        Permission: ultimatecosmetics.balloons.graywool
+    LightGrayWool:
+        Item: '35:8'
+        Name: '&1Light Gray Wool Balloon'
+        Description: '&7&oA Light Gray Wool Balloon'
+        Position: 20
+        Permission: ultimatecosmetics.balloons.lightgraywool
+    CyanWool:
+        Item: '35:9'
+        Name: '&1Cyan Wool Balloon'
+        Description: '&7&oA Cyan Wool Balloon'
+        Position: 21
+        Permission: ultimatecosmetics.balloons.cyanwool
+    PurpleWool:
+        Item: '35:10'
+        Name: '&1Purple Wool Balloon'
+        Description: '&7&oA Purple Wool Balloon'
+        Position: 22
+        Permission: ultimatecosmetics.balloons.purplewool
+    BlueWool:
+        Item: '35:11'
+        Name: '&1Blue Wool Balloon'
+        Description: '&7&oA Blue Wool Balloon'
+        Position: 23
+        Permission: ultimatecosmetics.balloons.bluewool
+    BrownWool:
+        Item: '35:12'
+        Name: '&1Brown Wool Balloon'
+        Description: '&7&oA Brown Wool Balloon'
+        Position: 24
+        Permission: ultimatecosmetics.balloons.brownwool
+    GreenWool:
+        Item: '35:13'
+        Name: '&1Green Wool Balloon'
+        Description: '&7&oA Green Wool Balloon'
+        Position: 25
+        Permission: ultimatecosmetics.balloons.greenwool
+    RedWool:
+        Item: '35:14'
+        Name: '&1Red Wool Balloon'
+        Description: '&7&oA Red Wool Balloon'
+        Position: 28
+        Permission: ultimatecosmetics.balloons.redwool
+    BlackWool:
+        Item: '35:15'
+        Name: '&1Black Wool Balloon'
+        Description: '&7&oA Black Wool Balloon'
+        Position: 29
+        Permission: ultimatecosmetics.balloons.blackwool
+    Sponge:
+        Item: '19'
+        Name: '&1Sponge Balloon'
+        Description: '&7&oA Sponge Balloon'
+        Position: 30
+        Permission: ultimatecosmetics.balloons.sponge
+    Glass:
+        Item: '20'
+        Name: '&1Glass Balloon'
+        Description: '&7&oA Glass Balloon'
+        Position: 31
+        Permission: ultimatecosmetics.balloons.glass
+    Bricks:
+        Item: '45'
+        Name: '&1Bricks Balloon'
+        Description: '&7&oA Bricks Balloon'
+        Position: 32
+        Permission: ultimatecosmetics.balloons.bricks
+    Bookshelf:
+        Item: '47'
+        Name: '&1Bookshelf Balloon'
+        Description: '&7&oA Bookshelf Balloon'
+        Position: 33
+        Permission: ultimatecosmetics.balloons.bookshelf
+    MossStone:
+        Item: '48'
+        Name: '&1Mossy Cobblestone Balloon'
+        Description: '&7&oA Mossy Cobblestone Balloon'
+        Position: 34
+        Permission: ultimatecosmetics.balloons.mossstone
+    # Starting at page 2
+    Obsidian:
+        Item: '49'
+        Name: '&1Obsidian Balloon'
+        Description: '&7&oAn Obsidian Balloon'
+        Position: 55
+        Permission: ultimatecosmetics.balloons.obsidian
+    Snow:
+        Item: '80'
+        Name: '&1Snow Balloon'
+        Description: '&7&oA Snow Balloon'
+        Position: 56
+        Permission: ultimatecosmetics.balloons.snow
+    Clay:
+        Item: '82'
+        Name: '&1Clay Balloon'
+        Description: '&7&oA Clay Balloon'
+        Position: 57
+        Permission: ultimatecosmetics.balloons.clay
+    Pumpkin:
+        Item: '86'
+        Name: '&1Pumpkin Balloon'
+        Description: '&7&oA Pumpkin Balloon'
+        Position: 58
+        Permission: ultimatecosmetics.balloons.pumpkin
+    Netherrack:
+        Item: '87'
+        Name: '&1Netherrack Balloon'
+        Description: '&7&oA Netherrack Balloon'
+        Position: 59
+        Permission: ultimatecosmetics.balloons.netherrack
+    SoulSand:
+        Item: '88'
+        Name: '&1Soul Sand Balloon'
+        Description: '&7&oA Soul Sand Balloon'
+        Position: 60
+        Permission: ultimatecosmetics.balloons.soulsand
+    Glowstone:
+        Item: '89'
+        Name: '&1Glowstone Balloon'
+        Description: '&7&oA Glowstone Balloon'
+        Position: 61
+        Permission: ultimatecosmetics.balloons.glowstone
+    JackOLantern:
+        Item: '91'
+        Name: '&1Jack o''Lantern Balloon'
+        Description: '&7&oA Jack o''Lantern Balloon'
+        Position: 64
+        Permission: ultimatecosmetics.balloons.jackolantern
+    StoneBrick:
+        Item: '98'
+        Name: '&1Stone Brick Balloon'
+        Description: '&7&oA Stone Brick Balloon'
+        Position: 65
+        Permission: ultimatecosmetics.balloons.stonebrick
+    Melon:
+        Item: '103'
+        Name: '&1Melon Balloon'
+        Description: '&7&oA Melon Balloon'
+        Position: 66
+        Permission: ultimatecosmetics.balloons.melon
+    Mycelium:
+        Item: '110'
+        Name: '&1Mycelium Balloon'
+        Description: '&7&oA Mycelium Balloon'
+        Position: 67
+        Permission: ultimatecosmetics.balloons.mycelium
+    NetherBrick:
+        Item: '112'
+        Name: '&1Nether Brick Balloon'
+        Description: '&7&oA Nether Brick Balloon'
+        Position: 68
+        Permission: ultimatecosmetics.balloons.netherbrick
+    Endstone:
+        Item: '121'
+        Name: '&1Endstone Balloon'
+        Description: '&7&oAn Endstone Balloon'
+        Position: 69
+        Permission: ultimatecosmetics.balloons.endstone
+    QuartzBlock:
+        Item: '155'
+        Name: '&1Quartz Block Balloon'
+        Description: '&7&oA Quartz Block Balloon'
+        Position: 70
+        Permission: ultimatecosmetics.balloons.quartzblock
+    CoalBlock:
+        Item: '173'
+        Name: '&1Coal Block Balloon'
+        Description: '&7&oA Coal Block Balloon'
+        Position: 73
+        Permission: ultimatecosmetics.balloons.coalblock
+    IronBlock:
+        Item: '42'
+        Name: '&1Iron Block Balloon'
+        Description: '&7&oAn Iron Block Balloon'
+        Position: 74
+        Permission: ultimatecosmetics.balloons.ironblock
+    RedstoneBlock:
+        Item: '152'
+        Name: '&1Redstone Block Balloon'
+        Description: '&7&oA Redstone Block Balloon'
+        Position: 75
+        Permission: ultimatecosmetics.balloons.redstoneblock
+    LapisBlock:
+        Item: '22'
+        Name: '&1Lapis Lazuli Block Balloon'
+        Description: '&7&oA Lapis Lazuli Block Balloon'
+        Position: 76
+        Permission: ultimatecosmetics.balloons.lapisblock
+    GoldBlock:
+        Item: '41'
+        Name: '&1Gold Block Balloon'
+        Description: '&7&oA Gold Block Balloon'
+        Position: 77
+        Permission: ultimatecosmetics.balloons.goldblock
+    DiamondBlock:
+        Item: '57'
+        Name: '&1Diamond Block Balloon'
+        Description: '&7&oA Diamond Block Balloon'
+        Position: 78
+        Permission: ultimatecosmetics.balloons.diamondblock
+    EmeraldBlock:
+        Item: '133'
+        Name: '&1Emerald Block Balloon'
+        Description: '&7&oAn Emerald Block Balloon'
+        Position: 79
+        Permission: ultimatecosmetics.balloons.emeraldblock
+DoNotChange: 3.3.1

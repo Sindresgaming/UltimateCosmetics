@@ -1,0 +1,329 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Gadgets be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /gadgets
+# The message to show when a player doesn't have permission to use a Gadget
+NoPermissionMessage: '&4You are not allowed to use this Gadget!'
+# The Sound to be played when a player is given a Gadget
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Gadget is removed
+RemoveSound: ENDERDRAGON_WINGS
+# Should Bat sounds be completely disabled on the server?
+DisableBatSounds: true
+# Should the Gadget be kept in the Slot?
+KeepGadget: true
+# Should we check if a player already has something in the Gadget Slot before replacing it?
+CheckInSlot: true
+# The slots in which the Gadgets will be put
+GadgetSlot: 4
+# The inventory name of the GUI
+GUIName: '&5&lGadgets'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+    # Should every Gadget that a player doesn't have access to be replaced by this item?
+    Enabled: true
+    # The item ID and optionally data of the item
+    Item: '351:8'
+    # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Gadget Name)
+    Name: '%cosmeticsname%'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&4&oYou are not allowed to use this Gadget'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Gadget &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Gadget'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Gadgets:
+    Enderbow:
+        # The name in the GUI of the item
+        Name: '&5Enderbow'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oShoot arrows and teleport to the place of landing!'
+        # The permission to use this Gadget
+        Permission: ultimatecosmetics.gadgets.enderbow
+        # The item ID and optionally data of the item (Should not be changed!)
+        Item: '261'
+        # Should the 'Ammo System' be used for this Gadget?
+        # You can give Ammo to a player by using /giveammo %playername% %gadgetidentifier% %amount%
+        # You can remove Ammo from a player by using /removeammo %playername% %gadgetidentifier% %amount%
+        # Examples: /giveammo j0ach1mmall3 Enderbow 10, /removeammo Notch PaintballGun 10
+        UseAmmo: true
+        # The name of the Ammo
+        AmmoName: 'EnderArrow'
+        # The cooldown in seconds before a player can use this Gadget again
+        Cooldown: 0
+        # The position in the GUI
+        Position: 10
+    EtherealPearl:
+        Name: '&5Ethereal Pearl'
+        Description: '&e&oTake a ride through the skies!'
+        Permission: ultimatecosmetics.gadgets.etherealpearl
+        Item: '368'
+        # The speed at which you will travel
+        Speed: 1
+        UseAmmo: true
+        AmmoName: 'Ethereal Pearl'
+        Cooldown: 10
+        Position: 11
+    PaintballGun:
+        Name: '&5Paintball Gun'
+        Description: '&e&oPaint the world!'
+        Permission: ultimatecosmetics.gadgets.paintballgun
+        Item: '418'
+        # The speed at which the bullets travel
+        Speed: 3
+        # The time in seconds before the ground will be restored
+        RestoreDelay: 3
+        # The size of paint you will shoot
+        PaintSize: 4
+        UseAmmo: true
+        AmmoName: 'Paintball'
+        Cooldown: 0
+        Position: 12
+    FlyingPig:
+        Name: '&5Flying Pig'
+        Description: '&e&oJust a randomly flying pig, what could go wrong?'
+        Permission: ultimatecosmetics.gadgets.flyingpig
+        Item: '329'
+        UseAmmo: false
+        AmmoName: 'Flying Pig'
+        Cooldown: 20
+        Position: 13
+    BatBlaster:
+        Name: '&5Bat Blaster'
+        Description: '&e&oBlow away your enemies with... Bats???'
+        Permission: ultimatecosmetics.gadgets.batblaster
+        Item: '417'
+        # The amount of Bats that will spawn
+        Amount: 20
+        # The speed at which the Bats will travel
+        Speed: 3
+        # The delay in seconds untill the Bats will be removed
+        RemoveDelay: 3
+        UseAmmo: false
+        AmmoName: 'BatBlaster Charge'
+        Cooldown: 20
+        Position: 14
+    CATapult:
+        Name: '&5CATapult'
+        Description: '&e&oLaunch 5 fearsome Cats!'
+        Permission: ultimatecosmetics.gadgets.catapult
+        Item: '383:98'
+        # The amount of Cats that will spawn
+        Amount: 5
+        # The speed at which the Cats will travel
+        Speed: 3
+        # The delay in seconds untill the Cats will explode
+        ExplosionDelay: 3
+        # The power of the explosion
+        ExplosionPower: 1
+        UseAmmo: false
+        AmmoName: 'CATapult Charge'
+        Cooldown: 20
+        Position: 15
+    RailGun:
+        Name: '&5RailGun'
+        Description: '&e&oUnleash the power of the RailGun!'
+        Permission: ultimatecosmetics.gadgets.railgun
+        Item: '292'
+        # The range of the RailGun
+        Range: 10
+        UseAmmo: false
+        AmmoName: 'RailGun Charge'
+        Cooldown: 0
+        Position: 16
+    CryoTube:
+        Name: '&5CryoTube'
+        Description: '&e&oProtect yourself against Apocalypse with the CryoTube!'
+        Permission: ultimatecosmetics.gadgets.cryotube
+        Item: '79'
+        # The delay untill the CryoTube gets removed
+        RemoveDelay: 3
+        UseAmmo: false
+        AmmoName: 'CryoTube'
+        Cooldown: 20
+        Position: 19
+    Rocket:
+        Name: '&5Rocket'
+        Description: '&e&oFly up into the Sky before exploding in a large ball of colors!'
+        Permission: ultimatecosmetics.gadgets.rocket
+        Item: '401'
+        # The speed at which the Rocket will travel
+        Speed: 2
+        # The time in seconds the Rocket will count down before lift-off
+        Countdown: 10
+        UseAmmo: false
+        AmmoName: 'Rocket'
+        Cooldown: 30
+        Position: 20
+    PoopBomb:
+        Name: '&5Poop Bomb'
+        Description: '&e&oLet the poop fly everywhere'
+        Permission: ultimatecosmetics.gadgets.poopbomb
+        Item: '351:3'
+        # The radius in which the poop will land
+        Radius: 5
+        # The amount of poop that will land
+        Amount: 15
+        # The delay in seconds untill the poop will be removed
+        RemoveDelay: 5
+        UseAmmo: false
+        AmmoName: 'Poop Bomb'
+        Cooldown: 20
+        Position: 21
+    GrapplingHook:
+        Name: '&5Grappling Hook'
+        Description: '&e&oDiscover unseen places with the new Grappling Hook(TM)!'
+        Permission: ultimatecosmetics.gadgets.grapplinghook
+        Item: '346'
+        # Should the GrapplingHook be able to pull players?
+        PullPlayers: true
+        UseAmmo: false
+        AmmoName: 'Grapple'
+        Position: 22
+    SelfDestruct:
+        Name: '&5Self Destruct'
+        Description: '&e&oExperience the feeling of blowing up!'
+        Permission: ultimatecosmetics.gadgets.selfdestruct
+        Item: '46'
+        # The range in which the players will be pushed back
+        PushbackRange: 5
+        UseAmmo: false
+        AmmoName: 'Bomb'
+        Cooldown: 20
+        Position: 23
+    Slimevasion:
+        Name: '&5Slimevasion'
+        Description: '&e&oRise my minnions, RISE!'
+        Permission: ultimatecosmetics.gadgets.slimevasion
+        Item: '341'
+        # The amount of Slimes that will spawn
+        Amount: 10
+        # The delay untill the Slimes will be removed
+        RemoveDelay: 3
+        UseAmmo: false
+        AmmoName: 'Slimevasion Charge'
+        Cooldown: 20
+        Position: 24
+    FunGun:
+        Name: '&5Fun Gun'
+        Description: '&e&oIt''s a Fun Gun...'
+        Permission: ultimatecosmetics.gadgets.fungun
+        Item: '369'
+        Cooldown: 5
+        UseAmmo: false
+        AmmoName: 'FunGun Charge'
+        Position: 25
+    MelonThrower:
+        Name: '&5Melon Thrower'
+        Description: '&e&oThrow the melons everywhere!'
+        Permission: ultimatecosmetics.gadgets.melonthrower
+        Item: '103'
+        # The amount of melon slices that will be created
+        Amount: 15
+        # The delay in seconds untill the melon slices will be removed
+        RemoveDelay: 3
+        Speed:
+            # The multiplier of the Speed potion effect when picking up a melon slice (Set to 0 to disable)
+            Multiplier: 3
+            # The duration in seconds of the Speed potion effect when picking up a melon slice (Set to 0 to disable)
+            Duration: 3
+        UseAmmo: false
+        AmmoName: 'Melon'
+        Cooldown: 20
+        Position: 28
+    ColorBomb:
+        Name: '&5Color Bomb'
+        Description: '&e&oMake the world explode in colors!'
+        Permission: ultimatecosmetics.gadgets.colorbomb
+        Item: '35:2'
+        # The delay in seconds untill the bomb will be removed
+        RemoveDelay: 5
+        # The items that will be shot out of the Color Bomb
+        Items:
+        - '35'
+        - '35:1'
+        - '35:2'
+        - '35:3'
+        - '35:4'
+        - '35:5'
+        - '35:6'
+        - '35:7'
+        - '35:8'
+        - '35:9'
+        - '35:10'
+        - '35:11'
+        - '35:12'
+        - '35:13'
+        - '35:14'
+        - '35:15'
+        UseAmmo: false
+        AmmoName: 'Color Bomb'
+        Cooldown: 20
+        Position: 29
+    FireTrail:
+        Name: '&5Fire Trail'
+        Description: '&e&oLeave a trail of blazing fire!'
+        Permission: ultimatecosmetics.gadgets.firetrail
+        Item: '377'
+        # The delay in seconds untill the fire will be removed
+        RemoveDelay: 3
+        # The duration in seconds of this Gadget
+        Duration: 10
+        Speed:
+            # The multiplier of the Speed potion effect when picking up a melon slice (Set to 0 to disable)
+            Multiplier: 2
+        UseAmmo: false
+        AmmoName: 'Fire Trail'
+        Cooldown: 20
+        Position: 30
+    DiamondShower:
+        Name: '&5Diamond Shower'
+        Description: '&e&oShower yourself in Diamonds to show off your wealth!'
+        Permission: ultimatecosmetics.gadgets.diamondshower
+        Item: '264'
+        # The interval in TICKS!! in which the Diamonds will be spawned
+        Interval: 5
+        # The duration in seconds of this Gadget
+        Duration: 10
+        UseAmmo: false
+        AmmoName: 'Diamond'
+        Cooldown: 20
+        Position: 31
+    GoldFountain:
+        Name: '&5Gold Fountain'
+        Description: '&e&oMake it rain Gold!'
+        Permission: ultimatecosmetics.gadgets.goldfountain
+        Item: '41'
+        # The delay in seconds untill the fountain will be removed
+        RemoveDelay: 5
+        UseAmmo: false
+        AmmoName: 'Gold'
+        Cooldown: 20
+        Position: 32
+    PaintTrail:
+        Name: '&5Paint Trail'
+        Description: '&e&oLeave a trail of Paint as you move!'
+        Permission: ultimatecosmetics.gadgets.painttrail
+        Item: '159:5'
+        # The time in seconds before the ground will be restored
+        RestoreDelay: 3
+        # The duration in seconds of this Gadget
+        Duration: 10
+        UseAmmo: false
+        AmmoName: 'Paint'
+        Cooldown: 20
+        Position: 33
+DoNotChange: 3.3.1

@@ -1,0 +1,311 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Mounts be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /mounts
+# The message to show when a player doesn't have permission to use a Mount
+NoPermissionMessage: '&4You are not allowed to use this Mount!'
+# The Sound to be played when a player is given a Mount
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Mount is removed
+RemoveSound: ENDERDRAGON_WINGS
+# The speed of the Mount
+MountSpeed: 2.0
+# The inventory name of the GUI
+GUIName: '&8&lMounts'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+    # Should every Mount that a player doesn't have access to be replaced by this item?
+    Enabled: true
+    # The item ID and optionally data of the item
+    Item: '351:8'
+    # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Mount Name)
+    Name: '%cosmeticsname%'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&4&oYou are not allowed to use this Mount'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Mount &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Mount'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Mounts:
+    Creeper:
+        # The item ID and optionally data of the item
+        Item: '383:50'
+        # The name in the GUI of the item
+        Name: '&8Creeper Mount'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oA Creeper Mount'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Mount
+        Permission: ultimatecosmetics.mounts.creeper
+        # The MountType of this Mount (Valid MountTypes can be found here: http://pastebin.com/T8znw3a8)
+        MountType: CREEPER
+        # The MountData of this Mount (Valid MountData can be found here: http://pastebin.com/T8znw3a8)
+        MountData: []
+    PoweredCreeper:
+        Item: '383:50'
+        Name: '&8Powered Creeper Mount'
+        Description: '&e&oA Powered Creeper Mount'
+        Position: 11
+        Permission: ultimatecosmetics.mounts.poweredcreeper
+        MountType: CREEPER
+        MountData:
+        - POWER
+    Skeleton:
+        Item: '383:51'
+        Name: '&8Skeleton Mount'
+        Description: '&e&oA Skeleton Mount'
+        Position: 12
+        Permission: ultimatecosmetics.mounts.skeleton
+        MountType: SKELETON
+        MountData: []
+    WitherSkeleton:
+        Item: '383:58'
+        Name: '&8Wither Skeleton Mount'
+        Description: '&e&oA Wither Skeleton Mount'
+        Position: 13
+        Permission: ultimatecosmetics.mounts.witherskeleton
+        MountType: SKELETON
+        MountData:
+        - WITHER
+    Spider:
+        Item: '383:52'
+        Name: '&8Spider Mount'
+        Description: '&e&oA Spider Mount'
+        Position: 14
+        Permission: ultimatecosmetics.mounts.spider
+        MountType: SPIDER
+        MountData: []
+    Giant:
+        Item: '383:54'
+        Name: '&8Giant Mount'
+        Description: '&e&oA Giant Mount'
+        Position: 15
+        Permission: ultimatecosmetics.mounts.giant
+        MountType: GIANT
+        MountData: []
+    Zombie:
+        Item: '383:54'
+        Name: '&8Zombie Mount'
+        Description: '&e&oA Zombie Mount'
+        Position: 16
+        Permission: ultimatecosmetics.mounts.zombie
+        MountType: ZOMBIE
+        MountData:
+        - BABY
+    ZombiePigman:
+        Item: '383:57'
+        Name: '&8Zombie Pigman Mount'
+        Description: '&e&oA Zombie Pigman Mount'
+        Position: 19
+        Permission: ultimatecosmetics.mounts.zombiepigman
+        MountType: PIG_ZOMBIE
+        MountData:
+        - BABY
+    Enderman:
+        Item: '383:58'
+        Name: '&8Enderman Mount'
+        Description: '&e&oAn Enderman Mount'
+        Position: 20
+        Permission: ultimatecosmetics.mounts.enderman
+        MountType: ENDERMAN
+        MountData: []
+    CaveSpider:
+        Item: '383:59'
+        Name: '&8Cave Spider Mount'
+        Description: '&e&oA Cave Spider Mount'
+        Position: 21
+        Permission: ultimatecosmetics.mounts.cavespider
+        MountType: CAVE_SPIDER
+        MountData: []
+    Silverfish:
+        Item: '383:60'
+        Name: '&8Silverfish Mount'
+        Description: '&e&oA Silverfish Mount'
+        Position: 22
+        Permission: ultimatecosmetics.mounts.silverfish
+        MountType: SILVERFISH
+        MountData: []
+    Witch:
+        Item: '383:66'
+        Name: '&8Witch Mount'
+        Description: '&e&oA Witch Mount'
+        Position: 23
+        Permission: ultimatecosmetics.mounts.witch
+        MountType: WITCH
+        MountData: []
+    Endermite:
+        Item: '383:67'
+        Name: '&8Endermite Mount'
+        Description: '&e&oAn Endermite Mount'
+        Position: 24
+        Permission: ultimatecosmetics.mounts.endermite
+        MountType: ENDERMITE
+        MountData: []
+    Pig:
+        Item: '383:90'
+        Name: '&8Pig Mount'
+        Description: '&e&oA Pig Mount'
+        Position: 25
+        Permission: ultimatecosmetics.mounts.pig
+        MountType: PIG
+        MountData:
+        - BABY
+    Sheep:
+        Item: '383:91'
+        Name: '&8Sheep Mount'
+        Description: '&e&oA Sheep Mount'
+        Position: 28
+        Permission: ultimatecosmetics.mounts.sheep
+        MountType: SHEEP
+        MountData:
+        - BABY
+    Cow:
+        Item: '383:92'
+        Name: '&8Cow Mount'
+        Description: '&e&oA Cow Mount'
+        Position: 29
+        Permission: ultimatecosmetics.mounts.cow
+        MountType: COW
+        MountData:
+        - BABY
+    Chicken:
+        Item: '383:93'
+        Name: '&8Chicken Mount'
+        Description: '&e&oA Chicken Mount'
+        Position: 30
+        Permission: ultimatecosmetics.mounts.chicken
+        MountType: CHICKEN
+        MountData:
+        - BABY
+    Wolf:
+        Item: '383:95'
+        Name: '&8Wolf Mount'
+        Description: '&e&oA Wolf Mount'
+        Position: 31
+        Permission: ultimatecosmetics.mounts.wolf
+        MountType: WOLF
+        MountData:
+        - BABY
+    Mooshroom:
+        Item: '383:96'
+        Name: '&8Mooshroom Mount'
+        Description: '&e&oA Mooshroom Mount'
+        Position: 32
+        Permission: ultimatecosmetics.mounts.mooshroom
+        MountType: MUSHROOM_COW
+        MountData:
+        - BABY
+    SnowGolem:
+        Item: '383:97'
+        Name: '&8Snow Golem Mount'
+        Description: '&e&oA Snow Golem Mount'
+        Position: 33
+        Permission: ultimatecosmetics.mounts.snowgolem
+        MountType: SNOWMAN
+        MountData: []
+    Ocelot:
+        Item: '383:98'
+        Name: '&8Ocelot Mount'
+        Description: '&e&oAn Ocelot Mount'
+        Position: 34
+        Permission: ultimatecosmetics.mounts.ocelot
+        MountType: OCELOT
+        MountData:
+        - BABY
+    # Starting at page 2
+    IronGolem:
+        Item: '383:51'
+        Name: '&8Iron Golem Mount'
+        Description: '&e&oAn Iron Golem Mount'
+        Position: 55
+        Permission: ultimatecosmetics.mounts.irongolem
+        MountType: IRON_GOLEM
+        MountData: []
+    Donkey:
+        Item: '383:100'
+        Name: '&8Donkey Mount'
+        Description: '&e&oA Donkey Mount'
+        Position: 56
+        Permission: ultimatecosmetics.mounts.donkey
+        MountType: HORSE
+        MountData:
+        - NONE
+        - DONKEY
+        - BABY
+    Horse:
+        Item: '383:100'
+        Name: '&8Horse Mount'
+        Description: '&e&oA Horse Mount'
+        Position: 57
+        Permission: ultimatecosmetics.mounts.horse
+        MountType: HORSE
+        MountData:
+        - NONE
+        - HORSE
+        - BABY
+    Mule:
+        Item: '383:100'
+        Name: '&8Mule Mount'
+        Description: '&e&oA Mule Mount'
+        Position: 58
+        Permission: ultimatecosmetics.mounts.mule
+        MountType: HORSE
+        MountData:
+        - NONE
+        - MULE
+        - BABY
+    SkeletonHorse:
+        Item: '383:51'
+        Name: '&8Skeleton Horse Mount'
+        Description: '&e&oA Skeleton Horse Mount'
+        Position: 59
+        Permission: ultimatecosmetics.mounts.skeletonhorse
+        MountType: HORSE
+        MountData:
+        - NONE
+        - SKELETON_HORSE
+        - BABY
+    ZombieHorse:
+        Item: '383:54'
+        Name: '&8Zombie Horse Mount'
+        Description: '&e&oA Zombie Horse Mount'
+        Position: 60
+        Permission: ultimatecosmetics.mounts.zombiehorse
+        MountType: HORSE
+        MountData:
+        - NONE
+        - UNDEAD_HORSE
+        - BABY
+    Rabbit:
+        Item: '383:101'
+        Name: '&8Rabbit Mount'
+        Description: '&e&oA Rabbit Mount'
+        Position: 61
+        Permission: ultimatecosmetics.mounts.rabbit
+        MountType: RABBIT
+        MountData:
+        - BABY
+    Villager:
+        Item: '383:120'
+        Name: '&8Villager Mount'
+        Description: '&e&oA Villager Mount'
+        Position: 64
+        Permission: ultimatecosmetics.mounts.villager
+        MountType: VILLAGER
+        MountData:
+        - BABY
+DoNotChange: 3.3.1

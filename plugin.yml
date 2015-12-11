@@ -1,0 +1,247 @@
+name: UltimateCosmetics
+main: com.j0ach1mmall3.ultimatecosmetics.Main
+version: 3.6.0
+author: j0ach1mmall3
+description: Featuring over 15 different Cosmetics Types, endless possibilities!
+depend: [JLib]
+softdepend: [LibsDisguises, ProtocolLib]
+commands:
+    UltimateCosmetics:
+        description: Main UltimateCosmetics command
+        usage: /<command> <arguments>
+        aliases: uc
+    Stacker:
+        description: Toggle Stacker
+        usage: /<command>
+        aliases: togglestacker
+    GiveAmmo:
+        description: Give Gadget Ammo to a player
+        usage: /<command> <target> <gadgetidentifier> <amount>
+    RemoveAmmo:
+        description: Remove Gadget Ammo from a player
+        usage: /<command> <target> <gadgetidentifier> <amount>
+    RemoveAllCosmetics:
+        description: Removes all Cosmetics from a player
+        usage: /<command> <target>
+    GiveBalloon:
+        description: Give a Balloon to a player
+        usage: /<command> <target> <Balloon>
+    RemoveBalloon:
+        description: Remove a player's Balloon
+        usage: /<command> <target>
+    GiveBanner:
+        description: Give a Banner to a player
+        usage: /<command> <target> <Banner>
+    RemoveBanner:
+        description: Remove a player's Banner
+        usage: /<command> <target>
+    GiveBowtrail:
+        description: Give a Bowtrail to a player
+        usage: /<command> <target> <Banner>
+    RemoveBowtrail:
+        description: Remove a player's Bowtrail
+        usage: /<command> <target>
+    GiveMorph:
+        description: Give a Morph to a player
+        usage: /<command> <target> <Morph>
+    RemoveMorph:
+        description: Remove a player's Morph
+        usage: /<command> <target>
+    GiveFirework:
+        description: Give a Firework to a player
+        usage: /<command> <target> <Firework>
+    GiveGadget:
+        description: Give a Gadget to a player
+        usage: /<command> <target> <Gadget>
+    RemoveGadget:
+        description: Remove a player's Gadget
+        usage: /<command> <target>
+    GiveHat:
+        description: Give a Hat to a player
+        usage: /<command> <target> <Hat>
+    RemoveHat:
+        description: Remove a player's Hat
+        usage: /<command> <target>
+    GiveHearts:
+        description: Give a balloon to a player
+        usage: /<command> <target> <Hearts>
+    RemoveHearts:
+        description: Remove a player's Hearts
+        usage: /<command> <target>
+    GiveMount:
+        description: Give a Mount to a player
+        usage: /<command> <target> <Mount>
+    GiveMusic:
+        description: Give Music to a player
+        usage: /<command> <target> <Music>
+    RemoveMusic:
+        description: Remove a player's Music
+        usage: /<command> <target>
+    GiveParticles:
+        description: Give Particles to a player
+        usage: /<command> <target> <Particles>
+    RemoveParticles:
+        description: Remove a player's Particles
+        usage: /<command> <target>
+    GivePet:
+        description: Give a Pet to a player
+        usage: /<command> <target> <Pet>
+    RemovePet:
+        description: Remove a player's Pet
+        usage: /<command> <target>
+    GiveTrail:
+        description: Give a Trail to a player
+        usage: /<command> <target> <Trail>
+    RemoveTrail:
+        description: Remove a player's Trail
+        usage: /<command> <target>
+    GiveOutfit:
+        description: Give an Outfit to a player
+        usage: /<command> <target> <Outfit>
+    RemoveOutfit:
+        description: Remove a player's Outfit
+        usage: /<command> <target>
+permissions:
+    uc.*:
+        description: All the UltimateCosmetics permissions
+        default: op
+        children:
+            uc.reload: true
+            uc.renamepet: true
+            uc.giveammo: true
+            uc.removeammo: true
+            uc.removeallcosmetics: true
+            uc.stacker: true
+            uc.unlimitedammo: true
+            uc.give.*: true
+            uc.remove.*: true
+    uc.give.*:
+        description: Access to giving all Cosmetic Types
+        default: op
+        children:
+            uc.give.balloon: true
+            uc.give.banner: true
+            uc.give.bowtrail: true
+            uc.give.morph: true
+            uc.give.firework: true
+            uc.give.gadget: true
+            uc.give.hat: true
+            uc.give.hearts: true
+            uc.give.mount: true
+            uc.give.music: true
+            uc.give.particles: true
+            uc.give.pet: true
+            uc.give.trail: true
+            uc.give.outfit: true
+    uc.remove.*:
+        description: Access to removing all Cosmetic Types
+        default: op
+        children:
+            uc.remove.balloon: true
+            uc.remove.banner: true
+            uc.remove.bowtrail: true
+            uc.remove.morph: true
+            uc.remove.hat: true
+            uc.remove.hearts: true
+            uc.remove.music: true
+            uc.remove.particles: true
+            uc.remove.pet: true
+            uc.remove.trail: true
+            uc.remove.outfit: true
+    uc.reload:
+        description: Access to /uc reload
+        default: op
+    uc.renamepet:
+        description: Access to renaming your Pet
+        default: op
+    uc.giveammo:
+        description: Access to /giveammo
+        default: op
+    uc.removeammo:
+        description: Access to /removeammo
+        default: op
+    uc.removeallcosmetics:
+        description: Access to /removeallcosmetics
+        default: op
+    uc.stacker:
+        description: Access to /stacker
+        default: true
+    uc.unlimitedammo:
+        description: Unlimited Ammo for Gadgets
+        default: op
+    uc.give.balloon:
+        description: Access to giving a Balloon
+        default: op
+    uc.give.banner:
+        description: Access to giving a Banner
+        default: op
+    uc.give.bowtrail:
+        description: Access to giving a Bowtrail
+        default: op
+    uc.give.morph:
+        description: Access to giving a Morph
+        default: op
+    uc.give.firework:
+        description: Access to giving a Firework
+        default: op
+    uc.give.gadget:
+        description: Access to giving a Gadget
+        default: op
+    uc.give.hat:
+        description: Access to giving a Hat
+        default: op
+    uc.give.hearts:
+        description: Access to giving Hearts
+        default: op
+    uc.give.mount:
+        description: Access to giving a Mount
+        default: op
+    uc.give.music:
+        description: Access to giving Music
+        default: op
+    uc.give.particles:
+        description: Access to giving Particles
+        default: op
+    uc.give.pet:
+        description: Access to giving a Pet
+        default: op
+    uc.give.trail:
+        description: Access to giving a Trail
+        default: op
+    uc.give.outfit:
+        description: Access to giving an Outfit
+        default: op
+    uc.remove.balloon:
+        description: Access to removing a Balloon
+        default: op
+    uc.remove.banner:
+        description: Access to removing a Banner
+        default: op
+    uc.remove.bowtrail:
+        description: Access to removing a Bowtrail
+        default: op
+    uc.remove.morph:
+        description: Access to removing a Morph
+        default: op
+    uc.remove.hat:
+        description: Access to removing a Hat
+        default: op
+    uc.remove.hearts:
+        description: Access to removing Hearts
+        default: op
+    uc.remove.music:
+        description: Access to removing Music
+        default: op
+    uc.remove.particles:
+        description: Access to removing Particles
+        default: op
+    uc.remove.pet:
+        description: Access to removing a Pet
+        default: op
+    uc.remove.trail:
+        description: Access to removing a Trail
+        default: op
+    uc.remove.outfit:
+        description: Access to removing an Outfit
+        default: op
+    

@@ -1,0 +1,79 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# The message that should be sent when a Cosmetic Type is not enabled
+NotEnabled: '&cThis Cosmetic Type is not enabled!'
+# The message that should be sent when a player doesn't have permission to execute a command
+CommandNoPermission: '&4You are not allowed to do this!'
+# The message that should be sent when a player already has something on their head
+AlreadyOnHead: '&cYou already have a %itemname% on your head!'
+# The message that should be sent when a player needs to dismount his Vehicle
+DismountVehicle: '&cPlease dismount your current vehicle first!'
+# The message that should be sent when there isn't enough space for the CryoTube to spawn
+NotEnoughSpace: '&4Error: Not enough space!'
+# The message that should be sent when a NoteBlock song isn't found
+SongNotFound: '&4Error: Song not found!'
+# The message that should be sent when a player is renaming his Pet
+RenamePet: '&aWhat do you want your Pet to rename to?'
+# The message that should be sent when a player renamed his pet
+SuccessfulRename: '&aSuccessfully renamed your Pet to %petname%'
+# The message that should be sent when a player already has something on when selecting an Outfit
+AlreadyOnBody: '&cYou already have a %itemname% on your %armorslot%'
+# The message that should be sent when a player Stacked another player
+StackedPlayer: '&6You stacked %target%'
+# The message that should be sent when a player is Stacked by another player
+StackedByPlayer: '&6You were stacked by %stacker%'
+# The message that should be sent when a player is still in the cooldown for a Gadget
+GadgetsCooldown: '&cPlease wait %timeleft% more seconds before using this Gadget again!'
+# The message to be shown when you lose 1 Ammo
+LostAmmo: '&cYou lost 1 %ammoname%! You have %ammoleft% %ammoname%s left!'
+# The message to be shown when you don't have enough Ammo
+NotEnoughAmmo: '&cYou don''t have enough %ammoname%s!'
+# The message to be shown when you already have something in the Gadgets Slot
+AlreadyInGadgetsSlot: '&cYou already have something in Slot 4!'
+# The message to be shown when you already have something in the Morph Ability Slot
+AlreadyInAbilitySlot: '&cYou already have something in Slot 5!'
+# The message that should be sent when a player is still in the cooldown for a Morph Ability
+AbilityCooldown: '&cPlease wait %timeleft% more seconds before using this Ability again!'
+# The message to be shown when a player toggled Stacker ({statuscolor} will be green/red)
+ToggledStacker: '{statuscolor}You toggled Stacker!'
+# The message to be shown when a player doesn't have Stacker enabled
+StackerNotEnabled: '&cYou don''t have Stacker enabled!'
+# The message to be shown when the Stacked player doesn't have Stacker enabled
+StackedNotEnabled: '&c{stacked} doesn''t have Stacker enabled!'
+DoNotChange: 3.5.0
+
+# #################################################### #
+#                      PLACEHOLDERS                    #
+###################################################### #
+# Placeholders can be used in almost every string, throughout the entire plugin
+# The are not only limited to the lang file
+# There are 2 types of Placeholders: PlaceholderAPI Placeholders and Native Placeholders
+# If you have PlaceholderAPI installed, you can use those specific Placeholders (Link: https://www.spigotmc.org/wiki/placeholderapi-placeholders/)
+# If you don't have PlaceholderAPI installed, the plugin will switch over to Native Placeholders
+# It is highly recommended though, to install PlaceholderAPI!
+# All Native Placeholders:
+# %serverip% Server IP
+# %motd% Server MOTD
+# %servername% Server Name
+# %online% Online Player Count
+# %max% Maximum Player Count
+# %playername% Player Name
+# %displayname% Player Displayname
+# %health% Player Health
+# %x% Player Location X
+# %y% Player Location Y
+# %z% Player Location Z
+# %world% Player World
+# %level% Player Level
+# %xp% Player XP
+# %ip% Player IP
+# /!\ Placeholders below require Vault and valid Economy, Permissions and Chat plugins to be installed /!\
+# %balance% Player Balance
+# %group% Player Group
+# %prefix% Player Prefix
+# %suffix% Player Suffix

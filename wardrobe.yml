@@ -1,0 +1,181 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Wardrobe be enabled?
+Enabled: true
+# The command to open the GUI
+Command: /wardrobe
+# The message to show when a player doesn't have permission to use an Outfit
+NoPermissionMessage: '&4You are not allowed to use this Outfit!'
+# The Sound to be played when a player is given an Outfit
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Outfit is removed
+RemoveSound: ENDERDRAGON_WINGS
+# Should the plugin check if they player already has anything on before giving him an Outfit?
+CheckOnBody: true
+# Should Outfits be kept on death?
+KeepOnDeath: true
+# The inventory name of the GUI
+GUIName: '&d&lWardrobe'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+    # Should every Outfit that a player doesn't have access to be replaced by this item?
+    Enabled: true
+    # The item ID and optionally data of the item
+    Item: '351:8'
+    # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Outfit Name)
+    Name: '%cosmeticsname%'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&4&oYou are not allowed to use this Outfit'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Outfit &c&l<'
+    # The description, or 'lore' of the item (use | to start a new line)
+    Description: '&c&oClick here to remove your current Outfit'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Outfits:
+    American:
+        # The name in the GUI of the item
+        Name: '&dAmerican Outfit'
+        # The description, or 'lore' of the item (use | to start a new line)
+        Description: '&e&oAn American Outfit'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Outfit
+        Permission: ultimatecosmetics.wardrobe.american
+        ChestPlate:
+            # The Item ID of the ChestPlate
+            Item: '299'
+            # Optional RGB Color Codes if you are using leather Armor
+            Color: '255,255,255'
+        Leggings:
+            # The Item ID of the Leggings
+            Item: '300'
+            # Optional RGB Color Codes if you are using leather Armor
+            Color: '255,0,0'
+        Boots:
+            # The Item ID of the Boots
+            Item: '301'
+            # Optional RGB Color Codes if you are using leather Armor
+            Color: '0,0,255'
+    Dutch:
+        Name: '&dDutch Outfit'
+        Description: '&e&oA Dutch Outfit'
+        Position: 11
+        Permission: ultimatecosmetics.wardrobe.dutch
+        ChestPlate:
+            Item: '299'
+            Color: '255,0,0'
+        Leggings:
+            Item: '300'
+            Color: '255,255,255'
+        Boots:
+            Item: '301'
+            Color: '0,0,255'
+    French:
+        Name: '&1French Outfit'
+        Description: '&e&oA French Outfit'
+        Position: 12
+        Permission: ultimatecosmetics.wardrobe.french
+        ChestPlate:
+            Item: '299'
+            Color: '0,0,255'
+        Leggings:
+            Item: '300'
+            Color: '255,255,255'
+        Boots:
+            Item: '301'
+            Color: '255,0,0'
+    German:
+        Name: '&0German Outfit'
+        Description: '&e&oA German Outfit'
+        Position: 13
+        Permission: ultimatecosmetics.wardrobe.german
+        ChestPlate:
+            Item: '299'
+            Color: '0,0,0'
+        Leggings:
+            Item: '300'
+            Color: '255,0,0'
+        Boots:
+            Item: '301'
+            Color: '255,255,0'
+    Belgian:
+        Name: '&0Belgian Outfit'
+        Description: '&e&oA Belgian Outfit'
+        Position: 14
+        Permission: ultimatecosmetics.wardrobe.belgian
+        ChestPlate:
+            Item: '299'
+            Color: '0,0,0'
+        Leggings:
+            Item: '300'
+            Color: '255,255,0'
+        Boots:
+            Item: '301'
+            Color: '255,0,0'
+    Iron:
+        Name: '&7Iron Outfit'
+        Description: '&e&oAn Iron Outfit'
+        Position: 15
+        Permission: ultimatecosmetics.wardrobe.iron
+        ChestPlate:
+            Item: '307'
+            Color: '0,0,0'
+        Leggings:
+            Item: '308'
+            Color: '0,0,0'
+        Boots:
+            Item: '309'
+            Color: '0,0,0'
+    Chainmail:
+        Name: '&8Chainmail Outfit'
+        Description: '&e&oA Chainmail Outfit'
+        Position: 16
+        Permission: ultimatecosmetics.wardrobe.chainmail
+        ChestPlate:
+            Item: '303'
+            Color: '0,0,0'
+        Leggings:
+            Item: '304'
+            Color: '0,0,0'
+        Boots:
+            Item: '305'
+            Color: '0,0,0'
+    Gold:
+        Name: '&eGold Outfit'
+        Description: '&e&oA Gold Outfit'
+        Position: 19
+        Permission: ultimatecosmetics.wardrobe.gold
+        ChestPlate:
+            Item: '315'
+            Color: '0,0,0'
+        Leggings:
+            Item: '316'
+            Color: '0,0,0'
+        Boots:
+            Item: '317'
+            Color: '0,0,0'
+    Diamond:
+        Name: '&aDiamond Outfit'
+        Description: '&e&oA Diamond Outfit'
+        Position: 20
+        Permission: ultimatecosmetics.wardrobe.diamond
+        ChestPlate:
+            Item: '311'
+            Color: '0,0,0'
+        Leggings:
+            Item: '312'
+            Color: '0,0,0'
+        Boots:
+            Item: '313'
+            Color: '0,0,0'
+DoNotChange: 3.3.1

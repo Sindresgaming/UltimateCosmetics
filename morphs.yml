@@ -1,0 +1,527 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# Should Morphs be enabled? (Note: this requires LibsDisguises!)
+Enabled: true
+# The command to open the GUI
+Command: /morphs
+# The message to show when a player doesn't have permission to use a Morph
+NoPermissionMessage: '&4You are not allowed to use this Morph!'
+# The Sound to be played when a player is given a Morph
+GiveSound: ORB_PICKUP
+# The Sound to be played when a player's Morph is removed
+RemoveSound: ENDERDRAGON_WINGS
+# Should Morph Abilities be enabled?
+EnableAbilities: true
+# Should we check if a player already has something in the Ability Slot before replacing it?
+CheckInSlot: true
+# The slots in which the Ability will be put
+AbilitySlot: 4
+# The inventory name of the GUI
+GUIName: '&3&lMorphs'
+# The size of the GUI
+GUISize: 45
+NoPermissionItem:
+    # Should every Morph that a player doesn't have access to be replaced by this item?
+    Enabled: true
+    # The item ID and optionally data of the item
+    Item: '351:8'
+    # The name in the GUI of the item (Use %cosmeticsname% Placeholder for the current Morph Name)
+    Name: '%cosmeticsname%'
+    # The description, or 'lore' of the item (use |to start a new line)
+    Description: '&4&oYou are not allowed to use this Morph'
+RemoveItem:
+    # The item ID and optionally data of the item
+    Item: '30'
+    # The name in the GUI of the item
+    Name: '&c&l> &4Remove your Morph &c&l<'
+    # The description, or 'lore' of the item (use |to start a new line)
+    Description: '&c&oClick here to remove your current Morph'
+    # The position in the GUI of this item (starts at 0)
+    Position: 4
+Morphs:
+    Bat:
+        # The name in the GUI of the item
+        Name: '&3Bat Morph'
+        # The description, or 'lore' of the item (use |to start a new line)
+        Description: '&e&oA Bat Morph'
+        # The position in the GUI of this item (starts at 0)
+        Position: 10
+        # The permission to use this Morph
+        Permission: ultimatecosmetics.morphs.bat
+        # The Type of Morph (List can be found here: http://pastebin.com/Mag6rh29)
+        MorphType: BAT
+        # Ability configuration (List with description of Morph abilities can be found here: http://pastebin.com/RiqhA9W5)
+        Ability:
+          # The item ID and optionally data of the item
+          Item: '288'
+          # The name in the GUI of the item
+          Name: '&2Bat Ability'
+          # The description, or 'lore' of the item (use |to start a new line)
+          Description: '&e&oFlight for 5 seconds'
+          # The duration in seconds of this Ability
+          Duration: 5
+          # The cooldown in seconds of this Ability
+          Cooldown: 20
+    Blaze:
+        Name: '&3Blaze Morph'
+        Description: '&e&oA Blaze Morph'
+        Position: 11
+        Permission: ultimatecosmetics.morphs.blaze
+        MorphType: BLAZE
+        Ability:
+          Item: '288'
+          Name: '&2Blaze Ability'
+          Description: '&e&oFlight for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    CaveSpider:
+        Name: '&3Cave Spider Morph'
+        Description: '&e&oA Cave Spider Morph'
+        Position: 12
+        Permission: ultimatecosmetics.morphs.cavespider
+        MorphType: CAVE_SPIDER
+        Ability:
+          Item: '30'
+          Name: '&2Cave Spider Ability'
+          Description: '&e&oThrow Cobwebs that give Slowness 2|when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Chicken:
+        Name: '&3Chicken Morph'
+        Description: '&e&oA Chicken Morph'
+        Position: 13
+        Permission: ultimatecosmetics.morphs.chicken
+        MorphType: CHICKEN
+        Ability:
+          Item: '344'
+          Name: '&2Chicken Ability'
+          Description: '&e&oThrow eggs that spawn Baby Chickens|that disappear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Cow:
+        Name: '&3Cow Morph'
+        Description: '&e&oA Cow Morph'
+        Position: 14
+        Permission: ultimatecosmetics.morphs.cow
+        MorphType: COW
+        Ability:
+          Item: '335'
+          Name: '&2Cow Ability'
+          Description: '&e&oThrow Milk Buckets that heal potion|effects when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Creeper:
+        Name: '&3Creeper Morph'
+        Description: '&e&oA Creeper Morph'
+        Position: 15
+        Permission: ultimatecosmetics.morphs.creeper
+        MorphType: CREEPER
+        Ability:
+          Item: '289'
+          Name: '&2Creeper Ability'
+          Description: '&e&oFake explosion at your location'
+          Duration: 5
+          Cooldown: 20
+    Donkey:
+        Name: '&3Donkey Morph'
+        Description: '&e&oA Donkey Morph'
+        Position: 16
+        Permission: ultimatecosmetics.morphs.donkey
+        MorphType: DONKEY
+        Ability:
+          Item: '353'
+          Name: '&2Donkey Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    ElderGuardian:
+        Name: '&3Elder Guardian Morph'
+        Description: '&e&oAn Elder Guardian Morph'
+        Position: 19
+        Permission: ultimatecosmetics.morphs.elderguardian
+        MorphType: ELDER_GUARDIAN
+        Ability:
+          Item: '353'
+          Name: '&2Elder Guardian Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    EnderDragon:
+        Name: '&3Ender Dragon Morph'
+        Description: '&e&oAn Ender Dragon Morph'
+        Position: 20
+        Permission: ultimatecosmetics.morphs.enderdragon
+        MorphType: ENDER_DRAGON
+        Ability:
+          Item: '288'
+          Name: '&2Ender Dragon Ability'
+          Description: '&e&oFlight for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Enderman:
+        Name: '&3Enderman Morph'
+        Description: '&e&oAn Enderman Morph'
+        Position: 21
+        Permission: ultimatecosmetics.morphs.enderman
+        MorphType: ENDERMAN
+        Ability:
+          Item: '368'
+          Name: '&2Enderman Ability'
+          Description: '&e&oTeleport to the location you''re looking at'
+          Duration: 5
+          Cooldown: 20
+    Endermite:
+        Name: '&3Endermite Morph'
+        Description: '&e&oA Endermite Morph'
+        Position: 22
+        Permission: ultimatecosmetics.morphs.endermite
+        MorphType: ENDERMITE
+        Ability:
+          Item: '368'
+          Name: '&2Endermite Ability'
+          Description: '&e&oTeleport to the location you''re looking at'
+          Duration: 5
+          Cooldown: 20
+    Ghast:
+        Name: '&3Ghast Morph'
+        Description: '&e&oA Ghast Morph'
+        Position: 23
+        Permission: ultimatecosmetics.morphs.ghast
+        MorphType: GHAST
+        Ability:
+          Item: '288'
+          Name: '&2Ghast Ability'
+          Description: '&e&oFlight for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Giant:
+        Name: '&3Giant Morph'
+        Description: '&e&oA Giant  Morph'
+        Position: 24
+        Permission: ultimatecosmetics.morphs.giant
+        MorphType: GIANT
+        Ability:
+          Item: '367'
+          Name: '&2Giant Ability'
+          Description: '&e&oSpawn 5 Zombies at your location|that dissapear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Guardian:
+        Name: '&3Guardian Morph'
+        Description: '&e&oA Guardian Morph'
+        Position: 25
+        Permission: ultimatecosmetics.morphs.guardian
+        MorphType: GUARDIAN
+        Ability:
+          Item: '353'
+          Name: '&2Guardian Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Horse:
+        Name: '&3Horse Morph'
+        Description: '&e&oA Horse Morph'
+        Position: 28
+        Permission: ultimatecosmetics.morphs.horse
+        MorphType: HORSE
+        Ability:
+          Item: '353'
+          Name: '&2Horse Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    IronGolem:
+        Name: '&3Iron Golem Morph'
+        Description: '&e&oAn Iron Golem Morph'
+        Position: 29
+        Permission: ultimatecosmetics.morphs.irongolem
+        MorphType: IRON_GOLEM
+        Ability:
+          Item: '265'
+          Name: '&2Iron Golem Ability'
+          Description: '&e&oThrow Iron Ingots that give Resistance 2|when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    MagmaCube:
+        Name: '&3Magma Cube Morph'
+        Description: '&e&oA Magma Cube Morph'
+        Position: 30
+        Permission: ultimatecosmetics.morphs.magmacube
+        MorphType: MAGMA_CUBE
+        Ability:
+          Item: '378'
+          Name: '&2Magma Cube Ability'
+          Description: '&e&oJump Boost II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Mule:
+        Name: '&3Mule Morph'
+        Description: '&e&oA Mule Morph'
+        Position: 31
+        Permission: ultimatecosmetics.morphs.mule
+        MorphType: MULE
+        Ability:
+          Item: '353'
+          Name: '&2Mule Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Mooshroom:
+        Name: '&3Mooshroom Morph'
+        Description: '&e&oA Mooshroom Morph'
+        Position: 32
+        Permission: ultimatecosmetics.morphs.mooshroom
+        MorphType: MUSHROOM_COW
+        Ability:
+          Item: '40'
+          Name: '&2Mooshroom Ability'
+          Description: '&e&oThrow Red Mushrooms that give Nausea 2|when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Ocelot:
+        Name: '&3Ocelot Morph'
+        Description: '&e&oAn Ocelot Morph'
+        Position: 33
+        Permission: ultimatecosmetics.morphs.ocelot
+        MorphType: OCELOT
+        Ability:
+          Item: '353'
+          Name: '&2Ocelot Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Pig:
+        Name: '&3Pig Morph'
+        Description: '&e&oA Pig Morph'
+        Position: 34
+        Permission: ultimatecosmetics.morphs.pig
+        MorphType: PIG
+        Ability:
+          Item: '320'
+          Name: '&2Pig Ability'
+          Description: '&e&oThrow Cooked Porkshops that give Regeneration 2|when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    # Starting at page 2
+    ZombiePigman:
+        Name: '&3Zombie Pigman Morph'
+        Description: '&e&oA Zombie Pigman Morph'
+        Position: 55
+        Permission: ultimatecosmetics.morphs.zombiepigman
+        MorphType: PIG_ZOMBIE
+        Ability:
+          Item: '367'
+          Name: '&2Zombie Pigman Ability'
+          Description: '&e&oSpawn 5 Baby Zombie Pigmen at your location|that dissapear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Rabbit:
+        Name: '&3Rabbit Morph'
+        Description: '&e&oA Rabbit Morph'
+        Position: 56
+        Permission: ultimatecosmetics.morphs.rabbit
+        MorphType: RABBIT
+        Ability:
+          Item: '414'
+          Name: '&2Rabbit Ability'
+          Description: '&e&oJump Boost II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Sheep:
+        Name: '&3Sheep Morph'
+        Description: '&e&oA Sheep Morph'
+        Position: 57
+        Permission: ultimatecosmetics.morphs.sheep
+        MorphType: SHEEP
+        Ability:
+          Item: '35'
+          Name: '&2Sheep Ability'
+          Description: '&e&oThrow randomly colored Wool|Dissapears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Silverfish:
+        Name: '&3Silverfish Morph'
+        Description: '&e&oA Silverfish Morph'
+        Position: 58
+        Permission: ultimatecosmetics.morphs.silverfish
+        MorphType: SILVERFISH
+        Ability:
+          Item: '353'
+          Name: '&2Silverfish Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Skeleton:
+        Name: '&3Skeleton Morph'
+        Description: '&e&oA Skeleton Morph'
+        Position: 59
+        Permission: ultimatecosmetics.morphs.skeleton
+        MorphType: SKELETON
+        Ability:
+          Item: '261'
+          Name: '&2Skeleton Ability'
+          Description: '&e&oShoot 3 Arrows'
+          Duration: 5
+          Cooldown: 20
+    SkeletonHorse:
+        Name: '&3Skeleton Horse Morph'
+        Description: '&e&oA Skeleton Horse Morph'
+        Position: 60
+        Permission: ultimatecosmetics.morphs.skeletonhorse
+        MorphType: SKELETON_HORSE
+        Ability:
+          Item: '353'
+          Name: '&2Skeleton Horse Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Slime:
+        Name: '&3Slime Morph'
+        Description: '&e&oA Slime Morph'
+        Position: 61
+        Permission: ultimatecosmetics.morphs.slime
+        MorphType: SLIME
+        Ability:
+          Item: '341'
+          Name: '&2Slime Ability'
+          Description: '&e&oJump Boost II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    SnowGolem:
+        Name: '&3Snow Golem Morph'
+        Description: '&e&oA Snow Golem Morph'
+        Position: 64
+        Permission: ultimatecosmetics.morphs.snowgolem
+        MorphType: SNOWMAN
+        Ability:
+          Item: '332'
+          Name: '&2Snow Golem Ability'
+          Description: '&e&oShoot 3 Snowballs'
+          Duration: 5
+          Cooldown: 20
+    Spider:
+        Name: '&3Spider Morph'
+        Description: '&e&oA Spider Morph'
+        Position: 65
+        Permission: ultimatecosmetics.morphs.spider
+        MorphType: SPIDER
+        Ability:
+          Item: '30'
+          Name: '&2Spider Ability'
+          Description: '&e&oThrow Cobwebs that give Slowness 2|when a player picks them up.|Disappears after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Squid:
+        Name: '&3Squid Morph'
+        Description: '&e&oA Squid Morph'
+        Position: 66
+        Permission: ultimatecosmetics.morphs.squid
+        MorphType: SQUID
+        Ability:
+          Item: '353'
+          Name: '&2Squid Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    ZombieHorse:
+        Name: '&3Zombie Horse Morph'
+        Description: '&e&oA Zombie Horse Morph'
+        Position: 67
+        Permission: ultimatecosmetics.morphs.zombiehorse
+        MorphType: UNDEAD_HORSE
+        Ability:
+          Item: '353'
+          Name: '&2Zombie Horse Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Villager:
+        Name: '&3Villager Morph'
+        Description: '&e&oA Villager Morph'
+        Position: 68
+        Permission: ultimatecosmetics.morphs.villager
+        MorphType: VILLAGER
+        Ability:
+          Item: '388'
+          Name: '&2Villager Ability'
+          Description: '&e&oSpawn 5 Baby Villagers at your location|that dissapear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Witch:
+        Name: '&3Witch Morph'
+        Description: '&e&oA Witch Morph'
+        Position: 69
+        Permission: ultimatecosmetics.morphs.witch
+        MorphType: WITCH
+        Ability:
+          Item: '374'
+          Name: '&2Witch Ability'
+          Description: '&e&oThrow a Potion of Healing :)'
+          Duration: 5
+          Cooldown: 20
+    Wither:
+        Name: '&3Wither Morph'
+        Description: '&e&oA Wither Morph'
+        Position: 70
+        Permission: ultimatecosmetics.morphs.wither
+        MorphType: WITHER
+        Ability:
+          Item: '399'
+          Name: '&2Wither Ability'
+          Description: '&e&oShoot a Wither Skull'
+          Duration: 5
+          Cooldown: 20
+    WitherSkeleton:
+        Name: '&3Wither Skeleton Morph'
+        Description: '&e&oA Wither Skeleton Morph'
+        Position: 73
+        Permission: ultimatecosmetics.morphs.witherskeleton
+        MorphType: WITHER_SKELETON
+        Ability:
+          Item: '261'
+          Name: '&2Wither Skeleton Ability'
+          Description: '&e&oShoot 3 Arrows'
+          Duration: 5
+          Cooldown: 20
+    Wolf:
+        Name: '&3Wolf Morph'
+        Description: '&e&oA Wolf Morph'
+        Position: 74
+        Permission: ultimatecosmetics.morphs.wolf
+        MorphType: WOLF
+        Ability:
+          Item: '353'
+          Name: '&2Wolf Ability'
+          Description: '&e&oSpeed II for 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    Zombie:
+        Name: '&3Zombie Morph'
+        Description: '&e&oA Zombie Morph'
+        Position: 75
+        Permission: ultimatecosmetics.morphs.zombie
+        MorphType: ZOMBIE
+        Ability:
+          Item: '367'
+          Name: '&2Zombie Ability'
+          Description: '&e&oSpawn 5 Baby Zombies at your location|that dissapear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+    ZombieVillager:
+        Name: '&3Zombie Villager Morph'
+        Description: '&e&oA Zombie Villager Morph'
+        Position: 76
+        Permission: ultimatecosmetics.morphs.zombievillager
+        MorphType: ZOMBIE_VILLAGER
+        Ability:
+          Item: '367'
+          Name: '&2Zombie Villager Ability'
+          Description: '&e&oSpawn 5 Baby Zombies at your location|that dissapear after 5 seconds'
+          Duration: 5
+          Cooldown: 20
+DoNotChange: 3.4.0

@@ -1,0 +1,28 @@
+# ######################################################################################## #
+# UltimateCosmetics version 3.X.X configuration                                            #
+# Any help with this configuration should be requested here:                               #
+# https://www.spigotmc.org/threads/ultimatecosmetics-new-per-cosmetic-commands-paid.60528/ #
+# © 2015 j0ach1mmall3 - All rights reserved                                                #
+# ######################################################################################## #
+
+# The Type of Storage (Can be FILE, MYSQL, SQLITE, MONGODB, REDIS)
+Type: FILE
+# Database options
+Database:
+  # The ip of your MySQL/MongoDB/Redis Server
+  Host: localhost
+  # The port of your MySQL/MongoDB/Redis Server
+  # 3306 = MySQL default
+  # 27017 = MongoDB default
+  # 6379 = Redis default
+  Port: 3306
+  # The name of your MySQL/MongoDB Database
+  Database: Minecraft
+  # The user of your MySQL/MongoDB Database
+  User: root
+  # The password of your MySQL/MongoDB/Redis Database
+  Password: password
+  # The prefix UltimateCosmetics should use
+  # Don't change this unless you know what you're doing!
+  Prefix: uc_
+DoNotChange: 3.5.1
