@@ -12,6 +12,9 @@ If you are using shared hosting, you'll have to contact your host support.
 ## I am running Minecraft 1.7 and I get an error upon startup!
 Remove the Banners item from the config.yml, and disable Banners in banners.yml
 
+## I want to run this plugin without Spigot!
+Not possible, I depend on a lot of Spigot features, and you should use it if possible.
+
 ## Can you add feature X?
 Open a new issue here: https://github.com/j0ach1mmall3/UltimateCosmetics/issues/new and I'll see what I can do about it.
 
