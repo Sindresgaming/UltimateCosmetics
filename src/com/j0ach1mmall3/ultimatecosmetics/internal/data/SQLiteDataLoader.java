@@ -145,7 +145,7 @@ public final class SQLiteDataLoader extends SQLiteLoader implements DataLoader {
         Methods.removeCosmetics(p, (Main) this.plugin);
         List<String> list = queue.asList();
         this.sqLite.prepareStatement("UPDATE " + this.queueName + " SET Balloon=?, Banner=?, Bowtrail=?, Gadget=?, Hat=?, Hearts=?, Morph=?, Mount=?, Music=?, Particles=?, Pet=?, Trail=?, Outfit=? WHERE Player=?", preparedStatement -> {
-            for(int i=0;i<12;i++) {
+            for(int i=0;i<13;i++) {
                 this.sqLite.setString(preparedStatement, i+1, list.get(i));
             }
             this.sqLite.setString(preparedStatement, 14, p.getUniqueId().toString());

@@ -1,5 +1,6 @@
 package com.j0ach1mmall3.ultimatecosmetics.internal.data;
 
+import com.j0ach1mmall3.jlib.methods.General;
 import com.j0ach1mmall3.jlib.storage.database.CallbackHandler;
 import com.j0ach1mmall3.jlib.storage.database.mysql.MySQLLoader;
 import com.j0ach1mmall3.ultimatecosmetics.Main;
@@ -146,7 +147,8 @@ public final class MySQLDataLoader extends MySQLLoader implements DataLoader {
         Methods.removeCosmetics(p, (Main) this.plugin);
         List<String> list = queue.asList();
         this.mySQL.prepareStatement("UPDATE " + this.queueName + " SET Balloon=?, Banner=?, Bowtrail=?, Gadget=?, Hat=?, Hearts=?, Morph=?, Mount=?, Music=?, Particles=?, Pet=?, Trail=?, Outfit=? WHERE Player=?", preparedStatement -> {
-            for(int i=0;i<12;i++) {
+            for(int i=0;i<13;i++) {
+                General.sendMessage(plugin, "Setting " + list.get(i) + " at " + (i + 1));
                 this.mySQL.setString(preparedStatement, i+1, list.get(i));
             }
             this.mySQL.setString(preparedStatement, 14, p.getUniqueId().toString());

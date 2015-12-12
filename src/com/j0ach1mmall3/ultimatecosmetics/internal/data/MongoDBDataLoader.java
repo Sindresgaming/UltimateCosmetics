@@ -146,7 +146,6 @@ public final class MongoDBDataLoader extends MongoDBLoader implements DataLoader
             cosmetics.put("outfit", list.get(12));
             dbObject.put("cosmetics", cosmetics);
             this.mongoDB.updateObject(dbObject, new BasicDBObject("player", p.getUniqueId().toString()), this.queueName);
-            Methods.removeCosmetics(p, (Main) this.plugin);
         });
     }
 

@@ -201,13 +201,13 @@ public final class PlayerListener implements Listener {
 
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e) {
-        if (!this.plugin.getBabies().isRemoveCosmeticsOnLogOut()) this.plugin.getDataLoader().updateQueue(e.getPlayer(), new CosmeticsQueue(this.plugin, e.getPlayer()));
+        this.plugin.getDataLoader().updateQueue(e.getPlayer(), new CosmeticsQueue(this.plugin, e.getPlayer()));
         this.plugin.getDataLoader().unloadAmmo(e.getPlayer().getUniqueId().toString());
     }
 
     @EventHandler
     public void onPlayerKick(PlayerKickEvent e) {
-        if (!this.plugin.getBabies().isRemoveCosmeticsOnLogOut()) this.plugin.getDataLoader().updateQueue(e.getPlayer(), new CosmeticsQueue(this.plugin, e.getPlayer()));
+        this.plugin.getDataLoader().updateQueue(e.getPlayer(), new CosmeticsQueue(this.plugin, e.getPlayer()));
         this.plugin.getDataLoader().unloadAmmo(e.getPlayer().getUniqueId().toString());
     }
 }
