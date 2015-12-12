@@ -75,9 +75,7 @@ public final class MySQLDataLoader extends MySQLLoader implements DataLoader {
     public void unloadAmmo(String uuid) {
         Map<String, Integer> gadgetAmmo = this.ammo.get(uuid);
         this.ammo.remove(uuid);
-        if(gadgetAmmo == null) {
-            return;
-        }
+        if(gadgetAmmo == null) return;
         for(Map.Entry<String, Integer> entry : gadgetAmmo.entrySet()) {
             this.mySQL.prepareStatement("UPDATE " + this.ammoName + " SET " + entry.getKey() + "=? WHERE Player=?", preparedStatement -> {
                 this.mySQL.setString(preparedStatement, 1, String.valueOf(entry.getValue()));

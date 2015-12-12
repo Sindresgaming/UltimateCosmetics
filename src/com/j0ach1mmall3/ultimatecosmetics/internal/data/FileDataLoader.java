@@ -40,12 +40,13 @@ public final class FileDataLoader extends ConfigLoader implements DataLoader {
 
     @Override
     public void unloadAmmo(String uuid) {
-        if(this.ammo.get(uuid) == null) return;
-        for(String identifier : this.ammo.get(uuid).keySet()) {
-            this.config.set("Ammo." + uuid + '.' + identifier, this.ammo.get(uuid).get(identifier));
+        Map<String, Integer> gadgetAmmo = this.ammo.get(uuid);
+        this.ammo.remove(uuid);
+        if(gadgetAmmo == null) return;
+        for(Map.Entry<String, Integer> entry : gadgetAmmo.entrySet()) {
+            this.config.set("Ammo." + uuid + '.' + entry.getKey(), entry.getValue());
         }
         this.customConfig.saveConfig(this.config);
-        this.ammo.remove(uuid);
     }
 
     @Override

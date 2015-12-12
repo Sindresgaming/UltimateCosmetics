@@ -64,6 +64,7 @@ public final class MongoDBDataLoader extends MongoDBLoader implements DataLoader
     public void unloadAmmo(String uuid) {
         Map<String, Integer> gadgetAmmo = this.ammo.get(uuid);
         this.ammo.remove(uuid);
+        if(gadgetAmmo == null) return;
         for(Map.Entry<String, Integer> entry : gadgetAmmo.entrySet()) {
             this.mongoDB.getObject(new BasicDBObject("player", uuid), this.ammoName, dbObject ->  {
                 BSONObject ammoObject = (BSONObject) dbObject.get("ammo");
