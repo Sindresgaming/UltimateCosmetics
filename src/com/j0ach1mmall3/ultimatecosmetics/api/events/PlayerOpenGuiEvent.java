@@ -3,29 +3,20 @@ package com.j0ach1mmall3.ultimatecosmetics.api.events;
 import com.j0ach1mmall3.jlib.inventory.GUI;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
-import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
+import org.bukkit.event.player.PlayerEvent;
 
 /**
  * Created by j0ach1mmall3 on 17:35 13/10/2015 using IntelliJ IDEA.
  */
-public class PlayerOpenGuiEvent extends Event implements Cancellable {
+public class PlayerOpenGuiEvent extends PlayerEvent implements Cancellable {
     private static final HandlerList HANDLERS = new HandlerList();
-    private Player player;
     private GUI gui;
     private boolean cancelled;
 
     public PlayerOpenGuiEvent(Player player, GUI gui) {
-        this.player = player;
+        super(player);
         this.gui = gui;
-    }
-
-    public final Player getPlayer() {
-        return this.player;
-    }
-
-    public final void setPlayer(Player player) {
-        this.player = player;
     }
 
     public final GUI getGui() {
