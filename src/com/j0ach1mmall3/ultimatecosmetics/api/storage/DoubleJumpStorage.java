@@ -1,4 +1,4 @@
-package com.j0ach1mmall3.ultimatecosmetics.internal.storage;
+package com.j0ach1mmall3.ultimatecosmetics.api.storage;
 
 /**
  * Created by j0ach1mmall3 on 11:45 23/08/2015 using IntelliJ IDEA.

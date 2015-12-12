@@ -3,7 +3,7 @@ package com.j0ach1mmall3.ultimatecosmetics.internal.config;
 import com.j0ach1mmall3.jlib.methods.Parsing;
 import com.j0ach1mmall3.jlib.storage.file.yaml.ConfigLoader;
 import com.j0ach1mmall3.ultimatecosmetics.Main;
-import com.j0ach1mmall3.ultimatecosmetics.internal.storage.DoubleJumpStorage;
+import com.j0ach1mmall3.ultimatecosmetics.api.storage.DoubleJumpStorage;
 
 import java.util.Collections;
 import java.util.List;

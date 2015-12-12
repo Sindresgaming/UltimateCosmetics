@@ -30,6 +30,7 @@ public final class FileDataLoader extends ConfigLoader implements DataLoader {
 
     @Override
     public void loadAmmo(String uuid) {
+        createAmmo(uuid);
         Map<String, Integer> gadgetAmmo = new HashMap<>();
         for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
             gadgetAmmo.put(gadget.getIdentifier(), this.config.getInt("Ammo." + uuid + '.' + gadget.getIdentifier()));
@@ -39,6 +40,7 @@ public final class FileDataLoader extends ConfigLoader implements DataLoader {
 
     @Override
     public void unloadAmmo(String uuid) {
+        if(this.ammo.get(uuid) == null) return;
         for(String identifier : this.ammo.get(uuid).keySet()) {
             this.config.set("Ammo." + uuid + '.' + identifier, this.ammo.get(uuid).get(identifier));
         }

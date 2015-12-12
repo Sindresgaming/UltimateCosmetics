@@ -50,6 +50,7 @@ public final class MongoDBDataLoader extends MongoDBLoader implements DataLoader
                 }
                 this.ammo.put(uuid, gadgetAmmo);
             } else {
+                createAmmo(uuid);
                 for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
                     gadgetAmmo.put(gadget.getIdentifier(), 0);
                 }

@@ -47,17 +47,19 @@ public final class SQLiteDataLoader extends SQLiteLoader implements DataLoader {
             this.sqLite.executeQuerry(preparedStatement, resultSet ->  {
                 try {
                     if(!resultSet.next()) {
+                        createAmmo(uuid);
                         for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
                             gadgetAmmo.put(gadget.getIdentifier(), 0);
                         }
                         this.ammo.put(uuid, gadgetAmmo);
-                        return;
+                    } else {
+                        for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
+                            gadgetAmmo.put(gadget.getIdentifier(), resultSet.getInt(gadget.getIdentifier()));
+                        }
+                        this.ammo.put(uuid, gadgetAmmo);
                     }
-                    for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
-                        gadgetAmmo.put(gadget.getIdentifier(), resultSet.getInt(gadget.getIdentifier()));
-                    }
-                    this.ammo.put(uuid, gadgetAmmo);
                 } catch (SQLException e) {
+                    createAmmo(uuid);
                     e.printStackTrace();
                     for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
                         gadgetAmmo.put(gadget.getIdentifier(), 0);

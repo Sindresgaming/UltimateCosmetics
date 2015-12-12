@@ -13,7 +13,7 @@ import com.j0ach1mmall3.ultimatecosmetics.internal.config.Pagination;
 import com.j0ach1mmall3.ultimatecosmetics.internal.data.CosmeticsQueue;
 import com.j0ach1mmall3.ultimatecosmetics.internal.data.DataLoader;
 import com.j0ach1mmall3.ultimatecosmetics.internal.gui.CosmeticsGuiHandler;
-import com.j0ach1mmall3.ultimatecosmetics.internal.storage.DoubleJumpStorage;
+import com.j0ach1mmall3.ultimatecosmetics.api.storage.DoubleJumpStorage;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
@@ -159,10 +159,9 @@ public final class PlayerListener implements Listener {
         Player p = e.getPlayer();
         String uuid = p.getUniqueId().toString();
         DataLoader loader = this.plugin.getDataLoader();
-        loader.createAmmo(uuid);
+        loader.loadAmmo(uuid);
         loader.createStacker(p);
         loader.createQueue(p);
-        loader.loadAmmo(uuid);
         if (this.plugin.getBabies().isGiveItemOnJoin()) p.getInventory().setItem(this.plugin.getBabies().getJoinItemSlot(), this.plugin.getBabies().getJoinItem());
         if (this.plugin.getBabies().isUpdateChecker() && p.hasPermission("uc.reload")) {
             AsyncUpdateChecker checker = new AsyncUpdateChecker(this.plugin, 5885, this.plugin.getDescription().getVersion());

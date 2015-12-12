@@ -48,18 +48,20 @@ public final class MySQLDataLoader extends MySQLLoader implements DataLoader {
             this.mySQL.executeQuerry(preparedStatement, resultSet ->  {
                 try {
                     if(!resultSet.next()) {
+                        createAmmo(uuid);
                         for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
                             gadgetAmmo.put(gadget.getIdentifier(), 0);
                         }
                         this.ammo.put(uuid, gadgetAmmo);
-                        return;
+                    } else {
+                        for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
+                            gadgetAmmo.put(gadget.getIdentifier(), resultSet.getInt(gadget.getIdentifier()));
+                        }
+                        this.ammo.put(uuid, gadgetAmmo);
                     }
-                    for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
-                        gadgetAmmo.put(gadget.getIdentifier(), resultSet.getInt(gadget.getIdentifier()));
-                    }
-                    this.ammo.put(uuid, gadgetAmmo);
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    createAmmo(uuid);
                     for (GadgetStorage gadget : ((Main) this.plugin).getGadgets().getGadgets()) {
                         gadgetAmmo.put(gadget.getIdentifier(), 0);
                     }
@@ -73,6 +75,9 @@ public final class MySQLDataLoader extends MySQLLoader implements DataLoader {
     public void unloadAmmo(String uuid) {
         Map<String, Integer> gadgetAmmo = this.ammo.get(uuid);
         this.ammo.remove(uuid);
+        if(gadgetAmmo == null) {
+            return;
+        }
         for(Map.Entry<String, Integer> entry : gadgetAmmo.entrySet()) {
             this.mySQL.prepareStatement("UPDATE " + this.ammoName + " SET " + entry.getKey() + "=? WHERE Player=?", preparedStatement -> {
                 this.mySQL.setString(preparedStatement, 1, String.valueOf(entry.getValue()));
